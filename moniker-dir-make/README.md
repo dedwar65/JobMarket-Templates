@@ -2,7 +2,7 @@
 
 Steps:
 
-0. Read `mymoniker_README.sty` and follow the instructions therein
+0. Read `mymoniker_README.md` and follow the instructions therein
 0. Replace the dummy content in these files with your real content:
    * Abstract.tex : four items
       - Abstract for your dissertation as a whole (brief) 
