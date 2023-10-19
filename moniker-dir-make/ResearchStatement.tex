@@ -1,0 +1,44 @@
+\RequirePackage{mymoniker}    % Replace CarrollCD in mymoniker.sty with your LastnameFirstNameMiddleName
+\RequirePackage{dissertation} % required extra stuff
+\documentclass{scrartcl}
+
+\usepackage{color,hyperref}
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\usepackage{dirtytalk}
+
+%\bibliography{References}
+
+\begin{document}
+
+%\begin{abstract}
+%  \input{\abstractpath/Abstract\mymoniker}
+%\end{abstract}
+
+\section{Research interests and expertise}
+
+My journey in the economics profession up to this point began with an interest in wealth inequality. In the first half of my time as a graduate student, I took as many theory courses as the Economics department offered and wrote my second-year paper on a theoretical approach to proposing alternative measures of wealth inequality.\footnote{I mention this for background information regarding my research interests and expertise, but also because the writing sample included in my application is this second-year paper I refer to. As it currently stands, this paper will serve as the third chapter to my dissertation after much revision and adding a computational element to the exercise. This is not important here, but I can discuss more if interested.}
+
+In the fall of my third year in the program, I took an interest to heterogeneous agent (HA) macroeconomics for two main reasons. The first is that this area of research is a blend of mathematics (in the context of describing the solution to households' dynamic consumption-saving decisions) and computational methods. I share the perspective of the many researchers working on HA models: any model which hopes to be even approximately realistic will require assumptions of heterogeneity among the household's in the model such that its solution \textit{must} be reached numerically.
+
+This pivot to computational macroeconomics has led me to hone in on my coding skills, specifically in the Python programming language since the object oriented programming approach has some notable benefits over other languages when attempting to provide numerical solutions in these settings. In fact, I am currently a research assistant for the \href{https://econ-ark.org}{Econ-ARK Project} headed by Prof. Christopher Carroll.\footnote{My doctoral advisor as well, whom I've also included as one of my references.} Among the tools provided by the project, the main one is the \href{https://econ-ark.org/toolkit}{Heterogeneous Agents Resources and toolKit (HARK)}. Its main goal is to provide \textit{reproducible} code to solve and extend these sorts of HA models. 
+\section{Ongoing and completed research}
+
+I've mentioned the HARK project not only because I am a research assistant for Econ-Ark project, but also because I currently use the tools developed there in my dissertation research. My job market paper, which is a work in progress, presents a standard HA model of consumption-saving for households which are ex-post heterogeneous due to idiosyncratic labor income risk. Additionally, I allow for households to be heterogeneous ex-ante, much like the models presented by \cite{ks1998} and \cite{cstw2017}. However, my paper is interested in heterogeneity in the rate of return that households earn to their assets. I use tools developed by HARK to provide a structural estimation of the distribution of returns across households needed to be match data on wealth holdings provided by the Survey of Consumer Finanaces.
+
+Unlike the time preference factor for households, estimating differences in the rate of return to financial assets across households is possible, as this variable is directly observable. \cite{aflgdmlp20} conduct their own systematic analysis of return heterogeneity using 12 years of data from Norway's administrative tax records. The authors' findings reveal substantial differences in the average returns to assets for individuals (\textit{type dependence}), that this heterogeneity is found both within and across classes of assets with varying levels of risk, and that returns are positively correlated with wealth  (\textit{scale dependence}). Moreover, they futher demonstrate that this discovery of heterogeneous returns exhibits significant persistence over time and are positively correlated across generations. Each of these findings provide not only motivation for the assumption of ex-ante heterogeneous rates of return in the buffer-stock savings model of households, but also provide a benchmark to compare the distribution of rates of return resulting from the estimation procedure aimed at best matching the empirical distirbution of wealth.
+
+\section{Project proposals for internship period}
+
+\subsection{Empirical estimates of a relationship between trust and the rate of return}
+
+The analysis presented by \cite{aflgdmlp20} can not only provide insights for alternative assumptions in HA macro models, but the dataset that the authors provide could also be used to understand important features of wealth accumulation for individuals, which may manifest themselves in the rate of return. In this paper, the authors note a significant idiosyncratic component for realized returns; when included in the statistical model, this individual fixed effect allows the model to better explain variations in returns. The authors go on to cite \say{financial sophistication, the ability to process and use financial information, the ability to overcome inertia, and... the talent to manage and organize their businessess} as potential explanations for these persistent differrences in returns across individuals.
+
+\cite{Butler2016} uses data from the European Social Survey to establish an empirical relationship between trust levels measured in the survey and income data for the households included in the survey. In particular, the paper finds that there is a \say{right amount of trust}; that is, the relationship between trust and income is humped shaped. An intermediate level of trust is associated with the maximal level of income. 
+
+Since the ESS data from the \cite{Butler2016} work includes Norway as one of the countries for which the intensity of trust levels is measured for individuals, I wonder if it is possible to combine the data on trust with the comprehensive data on individual returns to wealth presented by \cite{aflgdmlp20}. Assuming that this is a feasible exercise, the next step of interest would be to describe the empirical relationship between individual trust levels and returns to wealth for the Norwegian households in this dataset. In particular, it would be nice to see if the hump-shaped relationship between trust and economic performance found in \cite{Butler2016} is maintained for returns to wealth, a measure of economic performance which plays a vital role in the consumption-saving behavior of households. Furthermore, a meaningful statistical relationship between returns and trust may offer another persistent trait of individual investors which may explain the idiosyncratic component of returns found in the data. 
+
+
+\end{document}
