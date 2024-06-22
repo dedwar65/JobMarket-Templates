@@ -1,0 +1,37 @@
+\RequirePackage{mymoniker}    % Replace CarrollCD in mymoniker.sty with your LastnameFirstNameMiddleName
+\RequirePackage{dissertation} % required extra stuff
+\documentclass{scrartcl}
+
+\usepackage{color,hyperref}
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\usepackage{dirtytalk}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
+\addbibresource{References.bib}
+
+
+\begin{document}
+
+\par My name is Decory Edwards and I am going into the 5th year of the Economics PhD program at Johns Hopkins. 
+If selected for the dissertation fellowship at the Boston FED, I am available to start in early September. 
+
+\par My primary motivation for applying for this position is that I would like to learn from and interact with
+more economists in the central bank setting. During the third year of my PhD, I completed a year-long internship at the Federal Reserve Board.
+In that position, I used a combination of Dynare and Matlab to study a DSGE model allow for climate change under the representative agent assumption.
+At the time, I was working with the theory group at Hopkins and was unsure about which subfield I should focus my dissertation on.
+Because of this, and the fact that I did the internship remotely and concurrently with my courses, I did not get as much out of the internship as I wanted at the time.
+
+\par Since then, I have focused my research agenda for the rest of my time at Hopkins on heterogenous agent macroeconomics. 
+My dissertation advisor, Chris Carroll, is the lead researcher of the econ-ark project, which features a toolkit (HARK) dedicated to solving and simulating these types of models. 
+The toolkit is written in python, and I’ve developed my coding skills significantly since the last time I was an intern. 
+
+\par In my time during this internship, I hope to work on my job market paper which utilizes the aforementioned HARK toolkit to develop a consumption-savings model of ex-ante heterogeneity in the rate of return to asset holdings. 
+Additionally, a highly desirable outcome for myself, if I were selected for the position, would be that I worked for or with a department economist(s) at your institution with the hopes that I could develop a research 
+question to explore for a different chapter of my dissertation. 
+
+
+\end{document}

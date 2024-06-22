@@ -1,0 +1,34 @@
+\RequirePackage{mymoniker}    % Replace CarrollCD in mymoniker.sty with your LastnameFirstNameMiddleName
+\RequirePackage{dissertation} % required extra stuff
+\documentclass{scrartcl}
+
+\usepackage{color,hyperref}
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\usepackage{dirtytalk}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
+\addbibresource{References.bib}
+
+
+\begin{document}
+
+\par My name is Decory Edwards and I am going into the 5th year of the Economics PhD program at Johns Hopkins. 
+If selected for the internship with the Policy Research and Analytics group at the Board, I am available to start in mid to late January. 
+
+\par My primary motivation for applying for this position is that I would like to learn from and interact with
+more economists in the central bank setting. During the third year of my PhD, I completed a year-long internship at the Federal Reserve Board.
+In that position, I used a combination of Dynare and Matlab to study a DSGE model allow for climate change under the representative agent assumption.
+At the time, I was working with the theory group at Hopkins and was unsure about which subfield I should focus my dissertation on.
+Because of this, and the fact that I did the internship remotely and concurrently with my courses, I did not get as much out of the internship as I wanted at the time.
+
+\par Since then, I have focused my research agenda for the rest of my time at Hopkins on heterogenous agent macroeconomics. 
+My dissertation advisor, Chris Carroll, is the lead researcher of the econ-ark project, which features a toolkit (HARK) dedicated to solving and simulating these types of models. 
+The toolkit is written in python, and I’ve developed my coding skills significantly since the last time I was an intern. 
+If selected for this position, I look forward to learning about what type of questions the Policy Research and Analytics group works on.
+A highly desirable outcome would be to develop some research question that I could explore in one of the remaining chapters of my dissertation.
+
+\end{document}
