@@ -1,0 +1,27 @@
+\RequirePackage{mymoniker}    % Replace CarrollCD in mymoniker.sty with your LastnameFirstNameMiddleName
+\RequirePackage{dissertation} % required extra stuff
+\documentclass{scrartcl}
+
+\usepackage{color,hyperref}
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\usepackage{dirtytalk}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
+\addbibresource{References2.bib}
+
+
+\begin{document}
+
+%\begin{abstract}
+%  \input{\abstractpath/Abstract\mymoniker}
+%\end{abstract}
+
+\section{Teaching Philosophy}
+
+\section{Preferred Courses}
+
+\end{document}

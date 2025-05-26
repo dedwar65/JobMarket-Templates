@@ -11,7 +11,7 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
-\addbibresource{References.bib}
+\addbibresource{References2.bib}
 
 
 \begin{document}
@@ -22,35 +22,38 @@
 
 \section{Ongoing and completed JMP research}
 
-My job market paper, which is a work in progress, constructs a standard HA model of consumption-saving for households who are ex-post heterogeneous due to idiosyncratic labor income risk. 
+My job market paper constructs a standard HA model of consumption-saving for households who are ex-post heterogeneous due to idiosyncratic labor income risk. 
 Additionally, I allow for households to be heterogeneous ex-ante, as in the models by \cite{gkgv22} and \cite{cstw2017}. 
 Most such models assume that the rate of return is identical across households, which very recent work by \cite{aflgdmlp20} has discovered evidence against. 
 
 Preliminary results of a simulated method of moments estimation show that such rate of return heterogeneity is sufficient to match measurements of inequality from the Survey of Consumer Finances. 
 This result holds both for the baseline model where households solve an infinite horizon problem, and for a realistically calibrated
-life cycle version of the model. 
+life cycle version of the model.
 
-The next steps toward completing my job market paper will be to include both a bequest motive and choice of a risky asset for households.
-Both are straightforward to accommodate and I have support from my department/advisor in getting this done. 
-I will need to modify the structural estimation to allow for other moments of the model, like median wealth holdings by age, to 
-match empirical counterparts of those moments in order to properly identify the estimated bequest parameter and distribution of returns.
+My work is similar to three strands of literature regarding heterogeneous returns in life-cycle consumption-saving models:
 
-After this, and carefully modifying the code to allow for portfolio choice, I will run robustness checks for this final version of the model,
-which include matching moments from the different waves of the SCF wealth data, as well as for measures of wealth other than net worth (like liquid or financial wealth).
+\begin{itemize}
+\item Research which models the heterogeneity in returns using entrepreneurial talent.
+\item Research which calibrates the model using data on return heterogeneity.
+  \item Research which estimates return heterogeneity (along with other parameters).
+  \end{itemize}
+
+  My work is different from the first strand in that the assumed return heterogeneity in my model take no stands on where these differences in returns comes from. This allows for other explanations from the literature, like financial sophistication or trust in financial institutions, to be explored in an extension of this model.
+
+  My work is different from the second in that I estimate the return distribution directly by finding the one which allows the chosen moments of the simulated wealth distribution to match the moments of the wealth distribution in the data. This allows me to compare how well return heterogeneity does to say, time preference heterogeneity, in matching those same wealth moments.
+
+  My work is different from the third strand in a nuanced but important way. (finish this)
 
 
 \subsection{Other directions for research}
 
-My advisor and I meet regularly through the year to discuss my dissertation progress. 
-In my attempt to find another research question to explore for the remaining chapters of my dissertation,
-we have discussed the possibility of considering the relationship between trust and the rate of return, given the results
-I have so far from my JMP.
+My second chapter, as it currently stands, is interested in the relationship between trust and the rate of return.
 
 \cite{jbpglg2016} uses data from the European Social Survey to establish an empirical relationship between trust levels measured in the survey and income data for the households. 
 In particular, the paper finds that there is a \say{right amount of trust}. That is, the relationship between trust and income is humped shaped. 
 An intermediate level of trust is associated with the maximal level of income. 
 
-It would be interesting to see if I could use data to see if there is a similar relationship between individual trust levels and returns to wealth. 
+There is recent work \cite{Daminato2024} which uses the PSID to compute a measure of returns to wealth. This, along with a measure of trust which can be found in the HRS, can be used in an statistical model to estimate a relationship between trust and returns, which would be interesting.
 In particular, does the hump-shaped relationship between trust and economic performance found in \cite{jbpglg2016} holds also for returns to wealth?
 If so, perhaps this provides as adequate motivation to consider a model similar to the one from my JMP which allows for households to differ in there trust levels.
 
