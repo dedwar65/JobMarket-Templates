@@ -11,7 +11,7 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
-\addbibresource{References2.bib}
+\addbibresource{Chp1.bib}
 
 
 \begin{document}
@@ -20,44 +20,39 @@
 %  \input{\abstractpath/Abstract\mymoniker}
 %\end{abstract}
 
-\section{Ongoing and completed JMP research}
+My research agenda is focused on models of the economy which can generate wealth distributions like the ones we see in real life. It is a longstanding observable fact that wealth holdings among citizens in any nation are highly skewed. Identifying which features of a household's decision problem over the life cycle are most important for wealth accumulation is an immediate step towards understanding why such inequality persists to this date. One important determinant of wealth accumulation is the rate of return earned on assets across periods, which is another main focus of my research agenda. Though it is difficult to measure, recent work suggests that there is substantial heterogeneity in these returns. If returns are important for wealth inequality, and there is a persistent component to returns, understanding the source of this persistent component may be a step in the direction of building more complex macroeconomic settings which generate realistic skewness in the distribution of wealth. 
+
+\section{Wealth inequality and its determinants}
 
 My job market paper constructs a standard HA model of consumption-saving for households who are ex-post heterogeneous due to idiosyncratic labor income risk. 
 Additionally, I allow for households to be heterogeneous ex-ante, as in the models by \cite{gkgv22} and \cite{cstw2017}. 
 Most such models assume that the rate of return is identical across households, which very recent work by \cite{aflgdmlp20} has discovered evidence against. 
 
-Preliminary results of a simulated method of moments estimation show that such rate of return heterogeneity is sufficient to match measurements of inequality from the Survey of Consumer Finances. 
-This result holds both for the baseline model where households solve an infinite horizon problem, and for a realistically calibrated
+Preliminary results of a simulated method of moments estimation show that such rate of return heterogeneity is sufficient to match measurements of inequality from the Survey of Consumer Finances.  This result holds both for the baseline model where households solve an infinite horizon problem, and for a realistically calibrated
 life cycle version of the model.
 
-My work is similar to three strands of literature regarding heterogeneous returns in life-cycle consumption-saving models:
+The first notable difference is that, my paper models the uncertainty in labor income as a random walk, as opposed to an AR(1) process. The key implication of this modeling difference is that, the AR(1) specification leads to less uncertainty in earnings over the life cycle from the perspective of a household at the start of the horizon for which they are choosing an optimal consumption path. This will lead to less accumulation of wealth over the life cycle. In this way, the permanent income specification that I am using will attempt to describe \textit{as much} of the dispersion of wealth across households as possible with labor income uncertainty. The remaining dispersion in wealth across households which cannot be explained by differences in earnings will be attributed to returns heterogeniety, ultimately leading to more modest estimates of differences in returns acrosss households.
 
-\begin{itemize}
-\item Research which models the heterogeneity in returns using entrepreneurial talent.
-\item Research which calibrates the model using data on return heterogeneity.
-  \item Research which estimates return heterogeneity (along with other parameters).
-  \end{itemize}
+\par The second way in which may paper is different from the existing literature is that the life cycle version of my model is much richer in its calibration of earnings and mortality rates. Specifically, I use an earnings profile provided by \cite{Cagetti2003}, which distinguishes mean earnings not only by age but by education cohort. Furthermore, I use age-education dependent mortality rates provided by \cite{Brown2007}, which is uncommon in this literature. Essentially, I distinguish between households demographically by more than just age by incorporating education levels. Doing so does provide another avenue to explain dispersion in wealth holdings across households. However, it is a limited role and some further ex-ante heterogeneity among households, such as time preferences or the rate of return, is still needed to match wealth moments precisely. 
 
-  My work is different from the first strand in that the assumed return heterogeneity in my model take no stands on where these differences in returns comes from. This allows for other explanations from the literature, like financial sophistication or trust in financial institutions, to be explored in an extension of this model.
+\par The literature documenting the persistent component in individual returns holds even when the share invested in risky assets is $0$. With this in mind, I propose a simple model of the bank's optimization problem, where different banks offer different deposit rates based on the sensitivity of their deposits to changes in the market interest rate at their institution. The distribution of returns which best matches SCF data can then be used to back out an implied distribution of elasticities across the banks in the model. So, the estimates in this paper can be compared to the literature describing the variation in changes in bank deposits due to changes in the Fed funds rate at different banking institutions, like \cite{Drechsler2017}.   
 
-  My work is different from the second in that I estimate the return distribution directly by finding the one which allows the chosen moments of the simulated wealth distribution to match the moments of the wealth distribution in the data. This allows me to compare how well return heterogeneity does to say, time preference heterogeneity, in matching those same wealth moments.
+\section{Persistence in returns heterogeneity}
 
-  My work is different from the third strand in a nuanced but important way. (finish this)
+My job market paper shows that a single addition of model complexity beyond an uncertain labor income process (i.e. allowing households to earn different returns on their assets) is enough to generate wealth moments that are reasonably close to those measured by surveys. However, that paper does not take a stance on where the heterogeneity in returns comes from. The second chapter of my dissertation could provide motivation for a particular modeling choice which would endogenously generate differences in returns across households. 
 
-
-\subsection{Other directions for research}
-
-My second chapter, as it currently stands, is interested in the relationship between trust and the rate of return.
+This paper is aimed at establishing an empirical relationship between a measure of trust and the rate of return computed using survey data.
 
 \cite{jbpglg2016} uses data from the European Social Survey to establish an empirical relationship between trust levels measured in the survey and income data for the households. 
 In particular, the paper finds that there is a \say{right amount of trust}. That is, the relationship between trust and income is humped shaped. 
 An intermediate level of trust is associated with the maximal level of income. 
 
-There is recent work \cite{Daminato2024} which uses the PSID to compute a measure of returns to wealth. This, along with a measure of trust which can be found in the HRS, can be used in an statistical model to estimate a relationship between trust and returns, which would be interesting.
-In particular, does the hump-shaped relationship between trust and economic performance found in \cite{jbpglg2016} holds also for returns to wealth?
-If so, perhaps this provides as adequate motivation to consider a model similar to the one from my JMP which allows for households to differ in there trust levels.
+Additionally, there is recent work by \cite{Daminato2024} which uses the PSID to compute a measure of returns to wealth. This, along with a measure of trust which can be found in the HRS, can be used in an statistical model to estimate a relationship between trust and returns, which would be interesting.
+In particular, does the hump-shaped relationship between trust and economic performance found in \cite{jbpglg2016} holds also for returns to wealth? Much like individuals who are too trusting may lose out in terms of economic performance, a similar phenomenon could be true for the rate of return earned on their assets.
 
-From there, I could use data on varying degrees of trust across individuals to calibrate the model and produce return heterogeneity through that channel. 
-A nice result would be that this model, with heterogeneity in trust, also is able to generate significant inequality in the model's simulated distribution of wealth. 
+If this relationship between trust and returns does persist, allowing for households to differ in there trust levels in the standard heterogeneous agent macro setting would generate reasonable differences in returns. From there, the data on trust can be used to calibrate the model and a nice result would be that the subsequent returns heterogeneity would be able to match empirical wealth moments.
+
+
+
 
 \end{document}
