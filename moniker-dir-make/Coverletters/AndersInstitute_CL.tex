@@ -1,0 +1,49 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}% move right from left edge
+      \raisebox{-38mm}{% move down from top edge
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Your Name}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png} % show logo only on first page
+
+\begin{letter}{Dr. Jane Smith \\ Department of Economics \\ University of Chicago \\ Chicago, IL 60637}
+
+\opening{Dear Dr. Smith,}
+
+I am writing to apply for the Assistant Professor position in your department.
+This cover letter introduces my research agenda and teaching philosophy.
+
+[Write your letter body here. Add as many paragraphs as you need.]
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
