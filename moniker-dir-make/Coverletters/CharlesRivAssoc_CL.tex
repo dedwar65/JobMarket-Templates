@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}% move right from left edge
+      \raisebox{-38mm}{% move down from top edge
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png} % show logo only on first page
+
+\begin{letter}{Hiring Committee \\
+Charles River Associates \\
+200 Clarendon Street, T-33 \\
+Boston, MA 02116}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Research Economist / Economics Consulting position at Charles River Associates. I am a Ph.D. candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D. Carroll, Nicholas W. Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary areas of specialization are macroeconomic modeling, wealth and income dynamics, and computational economics.
+
+My research agenda is focused on the ability of macroeconomic models to generate distributions of wealth similar to those that we can measure empirically. A contributing factor to wealth accumulation over the life cycle is the rate of return earned on assets, so understanding the available data on wealth holding and methods to compute measures of returns is of much importance to my work. These topics are directly relevant to consulting engagements at CRA, where rigorous data-driven economic modeling supports corporate and policy decision-making.
+
+In my job market paper, I match wealth moments from the SCF by simulating a model in which households differ in the return earned on their assets. This modeling choice is motivated by the recent literature which documents substantial heterogeneity in portfolio returns across individuals, even within narrowly defined asset classes. In another research project, I analyze the relationship between trust and returns measured in the HRS. It is known that the empirical relationship between trust and measures of economic performance like income is hump-shaped — an intermediate amount of trust is associated with the maximal level of income. Not only am I able to replicate the hump-shaped relationship found in the literature in the HRS data, but I find that a similar relationship also holds for the constructed measure of returns. I also characterize the distribution of the persistent component of returns to net worth (a finding that motivated the modeling choices in my job market paper) for multiple waves of the HRS data.
+
+CRA’s mission to deliver rigorous, data-driven economic, financial, and strategic consulting to major corporations, law firms, and governments aligns closely with the questions I study. The firm’s focus on applying economic principles to real-world problems, synthesizing quantitative modeling, empirical analysis, and clear communication to non-technical stakeholders, is a natural fit for my skills. I would welcome the opportunity to translate my technical work into the kinds of expert reports, strategic briefs, and client-facing deliverables that CRA produces.
+
+I believe I would be a strong fit because my computational and empirical toolkit allows me to (i) produce robust, data-backed estimates of returns and distributional outcomes, (ii) build and validate models that speak to corporate, regulatory, and litigation-driven challenges such as merger and acquisition analysis, antitrust and competition economics, and strategy under regulatory uncertainty, and (iii) collaborate across teams to present insights in concise, actionable formats for a client audience. I am excited by CRA's global platform and multidisciplinary teams, where academic rigor meets high-impact consulting; this is an environment in which I expect my work to generate meaningful influence.
+
+
+I would welcome the chance to discuss how my research program could support CRA’s agenda. I do not have a preference regarding practice area or office location, and would be glad to work wherever I could contribute most.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
