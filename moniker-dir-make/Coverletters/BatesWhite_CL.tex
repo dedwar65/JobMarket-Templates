@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}% move right from left edge
+      \raisebox{-38mm}{% move down from top edge
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png} % show logo only on first page
+
+\begin{letter}{Hiring Committee \\
+Bates White Economic Consulting \\
+2001 K Street NW, North Building, Suite 500 \\
+Washington, DC 20006}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Economist position at Bates White Economic Consulting. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary areas of specialization are macroeconomic modeling, wealth and income dynamics, and computational economics.
+
+My research agenda is focused on the ability of macroeconomic models to generate distributions of wealth similar to those that we can measure empirically. A contributing factor to wealth accumulation over the life cycle is the rate of return earned on assets, so understanding the available data on wealth holding and methods to compute measures of returns is of much importance to my work. These topics are directly relevant to engagements at Bates White, where rigorous empirical analysis, clear communication, and collaboration with experts underpin work for law firms, Fortune 500 companies, and government agencies.
+
+In my job market paper, I match wealth moments from the Survey of Consumer Finances by simulating a model in which households differ in the return earned on their assets. This modeling choice is motivated by the recent literature which documents substantial heterogeneity in portfolio returns across individuals, even within narrowly defined asset classes. In another research project, I analyze the relationship between trust and returns measured in the Health and Retirement Study. It is known that the empirical relationship between trust and measures of economic performance like income is hump-shaped—an intermediate amount of trust is associated with the maximal level of income. Not only am I able to replicate the hump-shaped relationship found in the literature in the HRS data, but I find that a similar relationship also holds for the constructed measure of returns. I also characterize the distribution of the persistent component of returns to net worth (a finding that motivated the modeling choices in my job market paper) for multiple waves of the HRS data.
+
+Bates White’s platform—high-stakes litigation and advisory work with deep expertise in antitrust and competition, life sciences, and related practices—fits the way I work. I’m drawn to the firm’s model of pairing advanced econometrics and data science with clear, defensible narratives and expert testimony, as well as its structured mentorship and training for PhD Economists. I would welcome the chance to translate my technical work into expert reports, damages analyses, merger and conduct assessments, and client-facing presentations.
+
+I believe I would be a strong fit because my computational and empirical toolkit allows me to (i) produce robust, data-backed estimates of returns and distributional outcomes, (ii) build and validate models that speak to corporate, regulatory, and litigation-driven challenges—such as antitrust liability and damages, merger analysis, and strategy under regulatory scrutiny—and (iii) collaborate across teams to present insights in concise, actionable formats for a client audience. I am excited by Bates White’s emphasis on rigorous analysis, mentorship, and teamwork—an environment where I expect my work to have tangible impact.
+
+I would welcome the chance to discuss how my research program could support Bates White’s work. I do not have a preference regarding practice area or office location, and I’m glad to contribute wherever I can add the most value.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

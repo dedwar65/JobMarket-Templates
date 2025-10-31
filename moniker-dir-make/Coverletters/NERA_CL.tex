@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png} % show logo only on first page
+
+\begin{letter}{Hiring Committee \\
+NERA Economic Consulting \\
+1166 Avenue of the Americas, 23rd Floor \\
+New York, NY 10036}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Consultant (New PhD) position at NERA Economic Consulting. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary areas of specialization are macroeconomic modeling, wealth and income dynamics, and computational economics.
+
+My research agenda is focused on the ability of macroeconomic models to generate distributions of wealth similar to those that we can measure empirically. A contributing factor to wealth accumulation over the life cycle is the rate of return earned on assets, so understanding the available data on wealth holding and methods to compute measures of returns is of much importance to my work. These topics are directly relevant to engagements at NERA, where rigorous empirical analysis and clear communication support law firms, corporations, and government agencies across antitrust and competition, securities and finance, energy and infrastructure, transfer pricing and tax, health care, and other practice areas.
+
+In my job market paper, I match wealth moments from the Survey of Consumer Finances by simulating a model in which households differ in the return earned on their assets. This modeling choice is motivated by the recent literature which documents substantial heterogeneity in portfolio returns across individuals, even within narrowly defined asset classes. In another research project, I analyze the relationship between trust and returns measured in the Health and Retirement Study. It is known that the empirical relationship between trust and measures of economic performance like income is hump-shaped — an intermediate amount of trust is associated with the maximal level of income. Not only am I able to replicate the hump-shaped relationship found in the literature in the HRS data, but I find that a similar relationship also holds for the constructed measure of returns. I also characterize the distribution of the persistent component of returns to net worth (a finding that motivated the modeling choices in my job market paper) for multiple waves of the HRS data.
+
+NERA’s model — combining academic-level methods with practical, defensible analysis for high-stakes matters — is exactly the environment where I do my best work. I’m especially drawn to the opportunity to build economic and financial models, conduct applied econometric analysis, contribute to expert reports and testimony, and collaborate with in-house experts and academic affiliates across multiple industries and forums.
+
+I believe I would be a strong fit because my computational and empirical toolkit allows me to (i) produce robust, data-backed estimates of returns and distributional outcomes, (ii) build and validate models that speak to corporate, regulatory, and litigation-driven challenges — including merger and conduct analysis, liability and damages in competition and securities matters, and policy evaluation — and (iii) collaborate across teams to present insights in concise, actionable formats for clients and experts. I’m excited by NERA’s emphasis on mentorship and training, and I’m motivated by the prospect of growing into an expert who can contribute to testimony and client strategy.
+
+I would welcome the chance to discuss how my research program and quantitative skills could support NERA’s work. I do not have a preference regarding practice area or office location and would be glad to contribute wherever I can add the most value.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
