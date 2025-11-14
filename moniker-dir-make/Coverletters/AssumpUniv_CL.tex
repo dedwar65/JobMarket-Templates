@@ -1,0 +1,61 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant Professor Cover Letter – Assumption University (Finance Department)
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Finance \\
+Assumption University \\
+500 Salisbury Street \\ 
+Worcester, MA 01609 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to express my interest in the tenure-track Assistant Professor position in Finance at Assumption University, beginning Fall 2026. I am a Ph.D. candidate in Economics at Johns Hopkins University, advised by Professors Christopher D. Carroll, Nicholas W. Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, wealth and income dynamics, and computational economics.
+
+My research agenda is unified by a focus on understanding the determinants of wealth inequality and the mechanisms through which heterogeneity in returns to wealth shapes aggregate outcomes. In my job-market paper, I estimate the degree of heterogeneity in individual portfolio returns using micro-data from the Survey of Consumer Finances and simulate a structural model in which households face idiosyncratic return risk. I show that allowing for persistent heterogeneity in returns substantially improves the model’s ability to match the empirical distribution of wealth, offering a tractable way to connect micro-level return dispersion to macroeconomic inequality.
+
+In a second project, I use the Health and Retirement Study to study the relationship between interpersonal trust and portfolio performance. Building on the literature that finds a hump-shaped relationship between trust and income, I show that a similar relationship holds for individual returns to wealth measured in the HRS data, highlighting a behavioral channel through which social attitudes shape saving and investment outcomes. This work also provides new estimates of the persistent component of returns to net worth, which motivate the calibration of heterogeneity in my structural model.
+
+Assumption University’s Department of Finance (within the Grenon School of Business) emphasizes undergraduate engagement, small-class teaching, and combining quantitative rigor with ethical and contextual understanding of business and finance. The Department’s mission aligns closely with my interest in translating rigorous empirical and structural research into teaching and mentoring experiences for undergraduates. I am particularly drawn to the opportunity to teach core finance and quantitative courses while integrating my research on wealth, return heterogeneity, and computational methods in elective offerings.
+
+\textbf{Teaching.} My teaching experience centers on undergraduate macroeconomics and an upper-level macro-policy seminar, where I have led weekly discussion sections and held regular office hours for class sizes of 16 to 40 students. My approach is student-centered: I aim to help students “convince themselves” that they have moved from confusion to understanding by holding structured office-hour coaching that builds trust and confidence. At Assumption University I am prepared to teach \textit{Principles of Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, \textit{Money and Banking}, and \textit{Quantitative Methods for Economics}. I would also welcome developing electives such as \textit{Economics of Inequality and Tax Policy} or \textit{Computational Macroeconomics and Policy}, emphasizing reproducible workflows and evidence-based decision-making.
+
+I believe I would be a strong fit because my computational and empirical toolkit allows me to (i) produce robust, data-backed estimates of returns and distributional outcomes, (ii) build and validate models that speak to macroeconomic questions and finance-policy relevant issues, and (iii) collaborate with colleagues and mentor students in a liberal-arts–influenced business-school context. I am excited about the possibility of contributing to the Grenon School of Business’s mission of ethical business education and student-focused research engagement.
+
+I would be honored to contribute to Assumption University’s teaching, research, and service missions and to mentor undergraduate students pursuing quantitative and analytical careers in finance and economics. Thank you for your consideration; I welcome the opportunity to discuss my fit with your Department at your convenience.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

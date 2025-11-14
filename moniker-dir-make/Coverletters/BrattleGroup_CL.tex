@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png} % show logo only on first page
+
+\begin{letter}{Hiring Committee \\
+The Brattle Group \\
+111 Huntington Avenue, 10th Floor \\
+Boston, MA 02199}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my strong interest in the Associate (PhD – Economics Focus) position at The Brattle Group. I am a Ph.D. candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D. Carroll, Nicholas W. Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations lie in macroeconomic modeling, wealth and income dynamics, and computational economics.
+
+My research agenda centers on developing macroeconomic and wealth-distribution models that generate empirically realistic outcomes over the life cycle. A key component of that work is modeling heterogeneity in the rate of return on assets and understanding how return dispersion contributes to portfolio accumulation across households. These themes align strongly with projects at The Brattle Group, where Associates are expected to apply economic and financial theory to real-world litigation, corporate strategy, regulation, and public-policy engagements.
+
+In my job-market paper, I calibrate a life-cycle heterogeneous-agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a companion project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns — finding a hump-shaped relationship for returns, and characterizing the persistent component of net-worth returns across survey waves. These experiences have equipped me to: (i) frame research strategies and design modeling approaches, (ii) execute econometric and simulation analysis with large microdata sets, and (iii) translate results into clear, rigorous written deliverables for academic and practitioner audiences.
+
+I am particularly drawn to The Brattle Group’s unique “academic clarity meets consulting execution” culture: the opportunity to contribute from day one as a central team member, leading sub-analyses, supervising staff, and gradually developing into a client-facing expert. The posting emphasizes that Associates will “frame research approaches, manage projects, supervise team/staff, and build client relationships.” My background working across independent research, computational implementation, and presentation of findings has prepared me to thrive in that environment.
+
+I am excited about the prospect of contributing to high-profile engagements at The Brattle Group and growing into a recognized expert in economic consulting. I would welcome the opportunity to discuss how my research program and skills can support your work across litigation, regulation, and strategy.
+
+Thank you for considering my application.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
