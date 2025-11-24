@@ -1,0 +1,57 @@
+% ============================================
+% Assistant Professor Cover Letter – Tufts University
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+Tufts University \\
+Medford, MA 02155 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position in the Department of Economics at Tufts University, beginning in September 2026. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, international macroeconomics, and heterogeneous-agent modeling, with a particular focus on how wealth inequality and cross-household return heterogeneity shape aggregate dynamics.
+
+My job market paper estimates the distribution and persistence of household-level returns to wealth using Survey of Consumer Finances microdata and embeds those estimates into a heterogeneous-agent model to study how return dispersion amplifies wealth inequality. A second project uses Health and Retirement Study data to document a hump-shaped relationship between trust and realized portfolio returns, revealing a behavioral channel that affects macroeconomic wealth accumulation and differences in exposure to international risk. Together, these projects form a research agenda that links microeconomic frictions and heterogeneity to macroeconomic and international outcomes in a tractable and policy-relevant way.
+
+Tufts’ strengths in macroeconomics, international economics, and applied quantitative methods make it an ideal intellectual home for my work. I see strong complementarities with faculty studying international macro, open-economy frictions, and the distributional implications of global economic integration. I am enthusiastic about contributing to a department that values empirical grounding, rigorous modeling, and research with clear policy relevance.
+
+\textbf{Teaching.} I have extensive experience leading weekly sections, holding office hours, and supporting students in \textit{Introductory Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, and an upper-level \textit{Macroeconomic Policy} seminar. I am prepared to teach \textit{Macroeconomics}, \textit{International Economics}, and \textit{Graduate Macroeconomic Theory}, along with advanced undergraduate electives aligned with departmental needs. My instructional approach emphasizes clarity, structured problem-solving, and helping students build confidence through repeated engagement with dynamic models, data, and real-world applications. I also look forward to supervising undergraduate and graduate research that integrates empirical methods with modern macroeconomic modeling.
+
+I believe I would be a strong fit for Tufts because my research addresses central questions in macroeconomics and international economics while maintaining a strong empirical foundation, and my teaching experience aligns directly with the department’s needs in both its undergraduate and graduate programs. I am excited about the opportunity to contribute to a vibrant academic community committed to high-quality research, excellent teaching, and engaged mentorship.
+
+Thank you for your consideration. I would welcome the opportunity to discuss my application and research with you.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

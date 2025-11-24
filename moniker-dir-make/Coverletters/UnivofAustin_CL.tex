@@ -1,0 +1,58 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant/Associate Professor Cover Letter – University of Texas at Austin
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+School of Civic Leadership \\
+University of Texas at Austin \\
+Austin, TX 78712 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to express my interest in the full-time tenured/tenure-track faculty position in Economics within the School of Civic Leadership at the University of Texas at Austin, beginning Fall 2026. I am a Ph.D. candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, wealth and income dynamics, and computational economics.
+
+My research agenda is unified by a focus on how heterogeneity in returns to wealth and macroeconomic risk across agents shapes aggregate distributional outcomes and business decision-making under uncertainty. In my job-market paper, I estimate persistent heterogeneity in individual portfolio returns using micro-data from the Survey of Consumer Finances, then embed those estimates into a structural heterogeneous-agent model to study how return dispersion feeds into wealth concentration and macro outcomes. In a second project I use the Health and Retirement Study to examine how interpersonal trust correlates with realized portfolio returns — unveiling a behavioral channel through which social attitudes influence saving, investment and ultimately macro wealth dynamics.
+
+The School of Civic Leadership’s dual mission of equipping students for leadership in a free society and producing high-level scholarly research is an excellent match for my work. My focus on distributional risk, firm strategy under heterogeneous returns, and computational workflows aligns closely with the School’s emphasis on the intersections between markets, institutions, incentives and societal flourishing. I look forward to contributing to the Civitas Institute and advancing the applied, policy-relevant research culture championed at UT Austin.
+
+\textbf{Teaching.} My teaching experience centres on undergraduate macroeconomics and an upper-level macro policy seminar, where I have led weekly discussion sections, held regular office hours, and coached students in reproducible empirical workflows. My approach emphasises guiding students from uncertainty to insight by helping them “convince themselves” of their progress. At UT Austin, I am prepared to teach \textit{Principles of Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, \textit{Computational Methods for Economics}, and electives such as \textit{Economics of Inequality and Tax Policy}. I also would welcome developing courses that emphasise the institutional foundations of markets, empirical decision making using Python/Stata/Julia, and the role of heterogeneous returns in firm and policy strategy.
+
+I believe I would be a strong fit for the School of Civic Leadership because my computational and empirical training allows me to (i) teach and develop courses at the intersection of economics, business and policy, (ii) engage in research that speaks directly to institutional and distributional questions of a free society, and (iii) collaborate across teams to present insights in concise, actionable format for diverse audiences. I am enthused by UT Austin’s environment—where academic rigor meets high-impact public engagement—and I am excited about contributing to this mission.
+
+Thank you for your consideration. I would be honored to join the School of Civic Leadership at UT Austin and to contribute to its teaching, research, and mentorship missions. I look forward to discussing how I might fit and contribute.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

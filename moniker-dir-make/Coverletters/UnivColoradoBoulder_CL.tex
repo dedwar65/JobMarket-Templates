@@ -1,0 +1,57 @@
+% ============================================
+% Assistant Professor Cover Letter – University of Colorado Boulder
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+University of Colorado Boulder \\
+Boulder, CO 80309 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position in Macroeconomics in the Department of Economics at the University of Colorado Boulder, beginning August~2026. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May~2026. My research fields are macroeconomics, heterogeneous-agent modeling, and wealth and income dynamics, with a particular focus on understanding how heterogeneity in returns to wealth shapes aggregate behavior and distributional outcomes.
+
+My job market paper estimates the distribution and persistence of idiosyncratic portfolio returns using micro data from the Survey of Consumer Finances and embeds these estimates into a structural heterogeneous-agent model. I find that allowing for persistent heterogeneity in returns substantially improves the model’s ability to explain observed wealth concentration and macroeconomic inequality. A second project uses the Health and Retirement Study to document a hump-shaped relationship between interpersonal trust and realized portfolio returns, revealing a behavioral channel that influences exposure to aggregate and international risk. Together, these projects form a research agenda that combines micro data, rigorous quantitative methods, and macroeconomic theory to address central questions about wealth, risk, and aggregate dynamics.
+
+CU Boulder’s Economics Department is an ideal intellectual home for this work. Its strengths in macroeconomic theory, quantitative methods, and applied policy research align closely with my training, and I see clear opportunities for collaboration with faculty studying business cycles, labor markets, inequality, and open-economy macro. The department’s research culture and the College of Arts and Sciences’ commitment to interdisciplinary scholarship are especially attractive for developing my long-run agenda at the intersection of heterogeneous-agent macro, distributional dynamics, and the determinants of macroeconomic risk.
+
+\textbf{Teaching.} I have extensive experience supporting instruction in \textit{Introductory Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, and an upper-level \textit{Macroeconomic Policy} seminar, where I have led weekly discussion sections and held regular office hours. My teaching philosophy emphasizes clear structure, repeated application through problem-solving, and helping students “convince themselves” as they master dynamic models and empirical reasoning. At CU Boulder, I am fully prepared to teach \textit{Ph.D.\ Macroeconomic Theory}, \textit{Intermediate Macroeconomics}, \textit{Macroeconomic Policy}, and related graduate field courses. I am also eager to contribute to the department’s undergraduate and graduate research mentorship, including supervising dissertations, capstone projects, and empirical macroeconomic analyses.
+
+I believe I would be a strong fit for CU Boulder because my work brings together structural macroeconomic modeling, empirical analysis of household behavior, and a focus on distributional outcomes. My research agenda aligns with the department’s strengths, and my teaching experience prepares me to contribute effectively at both the undergraduate and graduate levels, including the Ph.D.\ core. I am excited about the opportunity to join a department committed to research excellence, innovative teaching, and broad engagement with the economics profession.
+
+Thank you for your consideration. I would be honored to contribute to the University of Colorado Boulder’s research, teaching, and mentorship missions, and I look forward to the opportunity to discuss my application further.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

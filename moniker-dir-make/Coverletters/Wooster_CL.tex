@@ -1,0 +1,61 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant Professor Cover Letter – College of Wooster
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+The College of Wooster \\
+1189 Beall Avenue \\
+Wooster, OH 44691 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to express my interest in the tenure-track Assistant Professor position in Economics at the College of Wooster. I am a Ph.D. candidate in Economics at Johns Hopkins University, advised by Professors Christopher D. Carroll, Nicholas W. Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, wealth and income dynamics, and computational economics, with strong connections to business economics, financial economics, and macrofinance.
+
+My research agenda focuses on understanding the determinants of wealth inequality and the mechanisms through which heterogeneity in returns to wealth shapes aggregate outcomes. In my job-market paper, I estimate the degree of heterogeneity in individual portfolio returns using micro-data from the Survey of Consumer Finances and simulate a structural model in which households face idiosyncratic return risk. I show that allowing for persistent heterogeneity in returns substantially improves the model’s ability to match the empirical distribution of wealth, offering a tractable way to connect micro-level return dispersion to macroeconomic inequality.
+
+In a second project, I use the Health and Retirement Study to examine the relationship between interpersonal trust and portfolio performance. Building on the literature that finds a hump-shaped relationship between trust and income, I show that a similar relationship holds for individual returns to wealth measured in the HRS data, highlighting a behavioral channel through which social attitudes shape saving and investment outcomes. This work also provides new estimates of the persistent component of returns to net worth, which motivate the calibration of heterogeneity in my structural model. Together, these projects speak to questions at the intersection of business economics, financial economics, and empirical macroeconomics in ways that are directly relevant to the position’s focus.
+
+The College of Wooster’s Economics Department graduates about 40 majors annually and emphasizes rigorous undergraduate education, student-centered pedagogy, and mentored research through the Independent Study (I.S.) requirement. I am particularly excited by the opportunity to supervise I.S. projects that integrate data analytics in business economics, financial markets, or macrofinance, and to contribute non-major courses such as First-Year Seminar. The liberal-arts context, coupled with Wooster’s commitment to intercultural fluency and inclusive teaching, aligns closely with my own priorities as a teacher-scholar.
+
+\textbf{Teaching.} My teaching experience centers on undergraduate macroeconomics and an upper-level macro-policy seminar, where I have led weekly discussion sections and held regular office hours for classes ranging from 16 to 40 students. My approach is student-centered: I aim to help students “convince themselves” that they have moved from confusion to understanding by holding structured office-hour coaching that builds trust and confidence. At Wooster, I am prepared to teach \textit{Principles of Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, \textit{Money and Banking}, and \textit{Quantitative Methods for Economics}. I would also welcome developing electives such as \textit{Economics of Inequality and Tax Policy} or \textit{Computational Macroeconomics and Policy}, emphasizing reproducible workflows and evidence-based decision-making, and tailoring them to business economics and financial economics themes.
+
+I am committed to inclusive, student-centered pedagogy and to mentoring a diverse cohort of majors and non-majors. In my courses, I incorporate examples and datasets that reflect a wide range of experiences and outcomes, offer multiple modes of engagement and assessment, and design research experiences that are accessible to students with different levels of prior preparation. I look forward to contributing to Wooster’s efforts to cultivate an intellectually vibrant and inclusive learning community.
+
+I would be honored to join the College of Wooster’s Department of Economics and to contribute to its teaching, research, and Independent Study mentoring missions. Thank you for your consideration; I welcome the opportunity to discuss my fit with your department at your convenience.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

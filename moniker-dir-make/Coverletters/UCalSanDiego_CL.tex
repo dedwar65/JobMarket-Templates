@@ -1,0 +1,58 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant Professor Cover Letter – UC San Diego (Rady School of Management)
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Rady School of Management \\
+University of California, San Diego \\
+San Diego, CA 92093 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position in Finance at the Rady School of Management at UC San Diego. I am a Ph.D.~candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May~2026. My research fields are financial economics, macroeconomics, and heterogeneous-agent modeling, with a particular emphasis on the distribution of returns to wealth and the implications for risk-taking, market behavior, and aggregate dynamics.
+
+My job market paper estimates persistent heterogeneity in household-level portfolio returns using micro data from the Survey of Consumer Finances and embeds these estimates into a structural heterogeneous-agent model. The results show that allowing for persistent return differences fundamentally alters predictions about wealth concentration, risk exposure, and the distribution of investment across asset classes—issues directly relevant to questions in financial economics. In a second project, I use Health and Retirement Study data to examine how interpersonal trust correlates with realized portfolio performance, identifying a behavioral channel that shapes market participation, risk-taking, and the distribution of financial outcomes. Together, these projects create a research agenda that links micro-level frictions and behavioral heterogeneity to financial market outcomes in a way that complements the Rady Finance faculty’s strengths in asset pricing, empirical finance, and household finance.
+
+The Rady School’s emphasis on rigorous, high-impact research, its strong Finance group, and its collaborative and interdisciplinary environment make UC San Diego an ideal place to develop this research agenda. I see clear synergies with faculty studying household finance, asset pricing under heterogeneity, and empirical links between micro data and aggregate financial outcomes. I would welcome the opportunity to contribute to a department where quantitative methods, empirical grounding, and computational modeling are central to research excellence.
+
+\textbf{Teaching.} I have extensive experience leading discussion sections and holding office hours for undergraduate macroeconomics and an upper-level macro policy seminar. My teaching philosophy emphasizes clarity, structured problem-solving, and helping students develop confidence through reproducible empirical workflows. At Rady, I am prepared to teach undergraduate and graduate courses in \textit{Financial Economics}, \textit{Corporate Finance}, \textit{Investments}, and \textit{Empirical Methods for Finance}, as well as electives that align with my research on heterogeneous returns, risk, and financial behavior. I am also enthusiastic about mentoring graduate students and integrating computational tools such as Python and Stata into finance education.
+
+I believe I would be a strong fit for the Rady School because my work bridges micro-level financial heterogeneity with aggregate asset-market behavior, producing research that is both empirically grounded and theoretically rich. My computational, structural, and empirical expertise prepares me to contribute to Rady’s research mission and its active culture of interdisciplinary collaboration.
+
+Thank you for your consideration. I would be honored to join the Rady School of Management and contribute to its research, teaching, and mentorship missions. I look forward to the opportunity to discuss my application with you.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

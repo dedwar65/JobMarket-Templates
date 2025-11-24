@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant Professor Cover Letter – Rutgers University
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+Rutgers University--New Brunswick \\
+New Brunswick, NJ 08901 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position in the Department of Economics at Rutgers University--New Brunswick, beginning in Fall 2026. I am a Ph.D. candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, wealth and income dynamics, and computational economics, with a strong emphasis on the study of inequality.
+
+My research agenda is centered on understanding the determinants of wealth inequality and the mechanisms through which heterogeneity in returns to wealth shapes household outcomes and aggregate distributions. In my job-market paper, I estimate the degree of heterogeneity in individual portfolio returns using micro-data from the Survey of Consumer Finances and simulate a structural heterogeneous-agent model in which households face idiosyncratic return risk. Allowing for persistent return heterogeneity significantly improves the model’s ability to match empirical wealth concentration, offering a tractable and micro-founded approach to studying inequality.
+
+A second project uses the Health and Retirement Study to examine how interpersonal trust correlates with individual returns to wealth later in life. Building on evidence that trust is hump-shaped with income, I show that a similar pattern emerges for realized portfolio returns. This highlights a behavioral mechanism through which social attitudes interact with financial decision-making and wealth accumulation. These results provide new empirical insights into persistent components of wealth-return heterogeneity—an important feature for calibrating structural inequality models.
+
+Rutgers’ strength in applied microeconomics and its emphasis on research related to health, environment, energy, and inequality align naturally with my work. My focus on return heterogeneity, distributional dynamics, and the structural sources of inequality complements existing faculty working on applied micro, labor, public, and health economics. Rutgers’ position as a premier Research 1 public university, with strong interdisciplinary centers and a robust graduate program, makes it an ideal environment to continue building a research agenda linking micro-level heterogeneity to macroeconomic and distributional outcomes.
+
+\textbf{Teaching.} My teaching experience includes undergraduate principles and intermediate macroeconomics, along with an upper-level macro policy seminar. I have led weekly discussion sections, held regular office hours, and worked closely with students to strengthen quantitative reasoning. At Rutgers, I am prepared to teach undergraduate and graduate microeconomics, econometrics, and field courses aligned with the department’s needs, particularly in inequality, macroeconomics, and applied empirical methods. My teaching philosophy emphasizes clarity, reproducibility, and helping students build confidence through structured problem-solving and evidence-based reasoning.
+
+I believe I would be a strong fit for Rutgers because my empirical and computational background allows me to (i) contribute to the department’s applied microeconomics portfolio, (ii) teach core undergraduate and graduate courses in microeconomics and econometrics, and (iii) advance research that complements the department’s thematic strengths in inequality, health, and environmental economics. I am also deeply committed to supporting Rutgers’ mission as a public land-grant institution by fostering inclusive learning environments, mentoring a diverse student body, and conducting research that speaks to issues of public relevance.
+
+Thank you for considering my application. I would be honored to join Rutgers University’s Department of Economics and contribute to its research, teaching, and service missions. I look forward to the opportunity to discuss my fit with the department.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

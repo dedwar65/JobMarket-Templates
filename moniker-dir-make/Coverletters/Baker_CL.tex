@@ -1,0 +1,60 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Assistant/Associate/Full Professor Cover Letter – Baker University
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Business and Economics \\
+Baker University \\
+Baldwin City, KS 66006 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to express my interest in the tenure-track faculty position in the Department of Business and Economics at Baker University, beginning August 1, 2026. I am a Ph.D. candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May 2026. My research fields are macroeconomics, wealth and income dynamics, and computational economics.
+
+My research agenda focuses on understanding the determinants of wealth inequality and the mechanisms through which heterogeneity in returns to wealth shapes aggregate outcomes. In my job-market paper, I estimate the degree of heterogeneity in individual portfolio returns using micro-data from the Survey of Consumer Finances and simulate a structural model in which households face idiosyncratic return risk. I show that allowing for persistent heterogeneity in returns substantially improves the model’s ability to match the empirical distribution of wealth, offering a tractable way to connect micro-level return dispersion to macroeconomic inequality.
+
+In a second project, I use the Health and Retirement Study to examine the relationship between interpersonal trust and portfolio performance. Building on the literature that finds a hump-shaped relationship between trust and income, I show that a similar relationship holds for individual returns to wealth measured in the HRS data, highlighting a behavioral channel through which social attitudes shape saving and investment outcomes. This work also provides new estimates of the persistent component of returns to net worth, which motivate the calibration of heterogeneity in my structural model.
+
+Baker University’s commitment to integrating business and economics within a liberal arts environment aligns closely with the way I approach both teaching and research. I am drawn to the department’s emphasis on undergraduate teaching excellence, experiential learning, support for student internships, and engagement with the Kansas City and global business communities. The ability to contribute to interdisciplinary programs in data analytics and international business also fits well with my computational background and my research on portfolio behavior and economic decision-making. I would welcome the opportunity to support students’ professional development, collaborate with alumni partners, and contribute to leadership needs within the department over time.
+
+\textbf{Teaching.} My teaching experience centers on undergraduate macroeconomics and an upper-level macro-policy seminar, where I have led weekly discussion sections and held regular office hours for classes ranging from 16 to 40 students. My approach is student-centered: I aim to help students “convince themselves” that they have moved from confusion to understanding by holding structured office-hour coaching that builds trust and confidence. At Baker, I am prepared to teach courses in \textit{Economics}, \textit{Analytics}, \textit{Finance}, and \textit{International Business}, depending on departmental needs. I also welcome the opportunity to mentor undergraduates, support internships and career pathways, and contribute to the department’s 4–4 teaching mission.
+
+I believe I would be a strong fit because my computational and empirical toolkit allows me to (i) provide students with strong analytical foundations, (ii) integrate real data and reproducible workflows into business and economics courses, and (iii) mentor students effectively in a liberal-arts setting that values professional development, applied learning, and close faculty–student engagement. I am enthusiastic about the opportunity to contribute to Baker University’s teaching, service, and community-engagement missions.
+
+I would be honored to join the Department of Business and Economics at Baker University. Thank you for your consideration; I welcome the opportunity to discuss my fit with your department at your convenience.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

@@ -1,0 +1,57 @@
+% ============================================
+% Assistant Professor Cover Letter – University of Florida
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Info -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+University of Florida \\
+Gainesville, FL 32611 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-accruing Assistant Professor position in Macroeconomics in the Department of Economics at the University of Florida, beginning August~16, 2026. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to receive my degree in May~2026. My research fields are macroeconomics, heterogeneous-agent modeling, and wealth and income dynamics, with a particular focus on how heterogeneity in returns to wealth shapes aggregate behavior and macroeconomic inequality.
+
+My job market paper estimates the distribution and persistence of household-level returns to wealth using micro data from the Survey of Consumer Finances, then embeds these estimates into a structural heterogeneous-agent model. I show that allowing for persistent return heterogeneity substantially improves the model’s ability to match the empirical wealth distribution and yields new insights about macroeconomic responses to policy. A second project uses Health and Retirement Study data to document a hump-shaped relationship between interpersonal trust and realized portfolio returns—a mechanism that influences saving behavior, risk exposure, and long-run wealth accumulation. Together, these projects form a broader agenda that brings micro-level heterogeneity, empirical rigor, and quantitative macroeconomic modeling to bear on core questions about wealth inequality, macroeconomic risk, and aggregate fluctuations.
+
+UF’s Department of Economics is an excellent environment for developing this research program. The department’s strong undergraduate, master’s, and Ph.D.\ programs, its emphasis on empirics and econometric methods, and its growing focus on data-driven macroeconomic analysis align closely with my training and interests. I am especially excited about the opportunity to contribute to a large, vibrant research community at a top public research university and to collaborate with faculty working in macroeconomics, applied microeconomics, and quantitative methods.
+
+\textbf{Teaching.} My teaching experience includes leading weekly discussion sections and office hours for \textit{Introductory Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, and an upper-level \textit{Macroeconomic Policy} seminar. My approach emphasizes clarity, structured problem-solving, and helping students “convince themselves” as they work through dynamic models and empirical applications. At UF, I am prepared to teach \textit{Undergraduate Macroeconomics}, \textit{Graduate Macroeconomic Theory}, and advanced electives in macroeconomic policy, heterogeneous-agent models, and computational macroeconomics. I would also welcome supervising both undergraduate and graduate research projects and contributing to the department’s econometrics-oriented curriculum.
+
+I believe I would be a strong fit for the University of Florida because my work combines quantitative macroeconomic modeling, empirical research using micro data, and a focus on distributional outcomes—all areas central to the department’s strengths and future goals. I look forward to contributing to UF’s research mission, to its expanding undergraduate and graduate programs, and to its culture of scholarly excellence and faculty governance.
+
+Thank you for your consideration. I would welcome the opportunity to discuss my application further and would be honored to join the University of Florida’s Department of Economics.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

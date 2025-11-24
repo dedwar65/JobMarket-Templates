@@ -1,0 +1,58 @@
+% ============================================
+% Assistant Professor Cover Letter – University of Georgia (Terry College of Business)
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Search Committee \\
+Department of Economics \\
+Terry College of Business \\
+University of Georgia \\
+Athens, GA 30602 \\ USA}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position in the Department of Economics at the University of Georgia’s Terry College of Business, beginning August~1, 2026. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, advised by Professors Christopher D.~Carroll, Nicholas W.~Papageorge, and Stelios Fourakis, and I expect to complete my degree in May~2026. My research fields are macroeconomics, heterogeneous-agent modeling, and wealth and income dynamics, with a particular focus on how heterogeneity in returns to wealth shapes aggregate behavior and long-run inequality.
+
+My job market paper estimates the distribution returns using micro data from the Survey of Consumer Finances, then embeds these estimates into a structural heterogeneous-agent model. The model shows that persistent return heterogeneity is a key determinant of observed wealth concentration and generates new predictions for how macroeconomic policy impacts households across the distribution. A second project uses Health and Retirement Study data to document a hump-shaped relationship between interpersonal trust and realized portfolio returns, identifying a behavioral channel through which social attitudes affect risk-taking, saving behavior, and wealth accumulation. Together, these projects form a research agenda that links micro-level heterogeneity, empirical tools, and macroeconomic theory in a way that speaks directly to modern business-cycle analysis and applied questions relevant to business economics.
+
+The Terry College of Business offers an ideal environment for this work. The Department of Economics has strong faculty working in macroeconomics, applied microeconomics, and econometrics, and the College’s emphasis on rigorous empirical methods and data analysis aligns closely with my training. I am especially excited about contributing to a research-active department within one of the country’s flagship public universities and collaborating with colleagues across economics, finance, and public policy. The interdisciplinary possibilities at UGA—including connections with the wider business school and the opportunity to engage with large datasets—strongly complement my research program.
+
+\textbf{Teaching.} My teaching experience includes leading weekly discussion sections and office hours for \textit{Introductory Macroeconomics}, \textit{Intermediate Macroeconomic Theory}, and an upper-level \textit{Macroeconomic Policy} seminar. My approach is student-centered and emphasizes clarity, structured practice, and reproducible empirical analysis. At UGA, I am prepared to teach \textit{Principles of Macroeconomics}, \textit{Intermediate Macroeconomics}, and upper-level electives such as \textit{Macroeconomic Policy}, \textit{Quantitative Macroeconomics}, or courses in computational methods using Python or Stata. I would also welcome mentoring undergraduate and graduate students and contributing to the department’s growing emphasis on empirical and data-intensive coursework.
+
+I believe I would be a strong fit for the Terry College because my research combines rigorous modeling, micro-data analysis, and an emphasis on distributional macroeconomics—areas consistent with the department’s strengths and teaching needs. I am excited about the opportunity to contribute to UGA’s research, teaching, mentorship, and service missions within a dynamic, research-intensive business school.
+
+Thank you for your consideration. I would be honored to join the University of Georgia and look forward to the possibility of contributing to the department’s continued growth and excellence.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
