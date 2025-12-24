@@ -1,0 +1,65 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Hiring Committee \\
+The TerraCotta Group \\
+2321 Rosecrans Ave, Suite 3270 \\
+El Segundo, CA 90245}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Research Director position with the TerraCotta Lab at The TerraCotta Group. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My research specializations include macroeconomic modeling, applied econometrics, wealth and income dynamics, and computational economics.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key element of that work is modeling heterogeneity in the rate of return on assets and understanding how return dispersion contributes to portfolio accumulation across households. These themes relate naturally to TerraCotta’s emphasis on combining economic insight, predictive analytics, and quantitative modeling to systematically identify, quantify, and mitigate risks in CRE credit.
+
+In my job-market paper, I calibrate a life-cycle heterogeneous-agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. This structure captures meaningful heterogeneity in risk exposure and investment outcomes—an approach directly relevant to analyzing borrower behavior, portfolio risk, and pricing in CRE credit. In a related project using the Health and Retirement Study, I analyze how trust influences income growth and asset returns—finding a hump-shaped relationship for returns and characterizing the persistent component of returns to net worth. These experiences have equipped me to: (i) formulate research strategies and design modeling approaches; (ii) execute large-scale empirical and simulation analysis using micro-data; and (iii) translate complex quantitative results into clear, actionable insights for technical and non-technical audiences.
+
+I am particularly drawn to TerraCotta’s culture of methodological innovation and its commitment to integrating original economic research into live investment decisions. The opportunity to work with proprietary data, deploy models through rapid feedback loops, and collaborate closely with both internal teams and external academic partners is especially compelling. My background in structural modeling, simulation-based estimation, predictive analytics, and computational economics positions me well to contribute to TerraCotta’s ongoing development of underwriting models, pricing systems, credit forecasting tools, and portfolio allocation frameworks.
+
+I believe I would be a strong fit for TerraCotta because:
+\begin{enumerate}
+    \item My experience in simulation-based modeling, structural estimation, and applied econometrics aligns with TerraCotta’s quantitative and evidence-based approach to CRE credit.
+    \item My research on heterogeneous outcomes and asset-return distributions prepares me to analyze borrower heterogeneity, credit risk, and return dynamics—all central to TerraCotta’s investment methodology.
+    \item I bring strong communication skills and a collaborative mindset suited to presenting model innovations, writing white papers, and engaging with interdisciplinary teams and external partners.
+\end{enumerate}
+
+I am excited about the opportunity to bring rigorous economic modeling, empirical analysis, and creative problem-solving to the TerraCotta Lab’s research portfolio. Thank you for considering my application.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

@@ -1,0 +1,65 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{Department of Economics \\ Johns Hopkins University \\ Baltimore, MD 21218 \\ \texttt{dedwar65@jh.edu}}
+
+% ----- Recipient Info -----
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{Hiring Committee \\
+Alfred P. Sloan Foundation \\
+630 Fifth Avenue, Suite 2550 \\
+New York, NY 10111}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Program Associate in Economics position at the Alfred P. Sloan Foundation. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My research specializations include macroeconomic modeling, applied econometrics, public finance, and wealth and income dynamics.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of this work is modeling heterogeneity in the rate of return on assets and understanding how return dispersion shapes long-run economic outcomes. These themes align naturally with Sloan’s mission of supporting rigorous, data-driven research that improves our understanding of economic systems and informs evidence-based policy and institutional design.
+
+In my job-market paper, I calibrate a life-cycle heterogeneous-agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. A central component of the analysis compares the effects of capital-income taxation and wealth taxation under return heterogeneity, with implications for efficiency, incentives, and distributional outcomes. In a related project using the Health and Retirement Study, I examine how trust influences income growth and asset returns—finding a hump-shaped relationship for returns and characterizing the persistent component of returns to net worth. These projects have equipped me to frame research agendas, evaluate empirical evidence, and communicate complex findings clearly to both technical and non-technical audiences.
+
+I am particularly drawn to Sloan’s programmatic model, which combines intellectual independence with close engagement across disciplines and institutions. A term-limited position offers an ideal opportunity to further develop my research agenda while contributing to the Foundation’s broader goal of fostering high-quality, policy-relevant social science. I am enthusiastic about the prospect of living and working in New York City and would welcome the opportunity to work in the office in person according to the Foundation’s expected hybrid schedule, collaborating closely with colleagues across programs.
+
+I believe I would be a strong fit for Sloan because:
+\begin{enumerate}
+    \item My research background in macroeconomics and public finance aligns with Sloan’s emphasis on foundational economic research with real-world relevance.
+    \item My experience evaluating data, models, and empirical claims prepares me well to engage with a wide range of research proposals and scholarly communities.
+    \item I bring strong written and verbal communication skills and a collaborative mindset well suited to a foundation environment.
+\end{enumerate}
+
+I would be excited to contribute to the Alfred P. Sloan Foundation while continuing to develop my research during a three-year term. Thank you for considering my application.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
