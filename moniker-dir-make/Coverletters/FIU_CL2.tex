@@ -1,0 +1,75 @@
+% ============================================
+% Johns Hopkins Letter Template
+% Uses the built-in 'letter' class
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+% ----- Page Setup -----
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+% ----- Logo Placement (foreground, first page only) -----
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+% ----- Sender Information -----
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Florida International University \\
+Miami, FL
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Assistant or Associate Teaching Professor position in the Department of Economics at Florida International University. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations are macroeconomic modeling, wealth and income dynamics, and computational economics.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns (consistent with the literature) and characterize the distribution of the persistent component of returns to net worth. These experiences have equipped me to frame research strategies and design modeling approaches, execute econometric and simulation analysis with large micro data sets, and translate results into clear and rigorous written deliverables for both academic and practitioner audiences.
+
+I am particularly drawn to FIU because of its identity as a Carnegie R1 institution embedded within a globally connected city. The Department of Economics, housed within the Steven J. Green School of International and Public Affairs, provides a unique environment in which economic analysis intersects with international and public policy concerns. My work on inequality, taxation, and macroeconomic heterogeneity connects naturally to questions of economic mobility, fiscal design, and global economic integration that are central to students pursuing careers in public and international affairs.
+
+I am fully prepared to embrace the teaching expectations of this role, including an eight course annual load. I have experience teaching and supporting introductory and intermediate courses and am comfortable teaching large sections of Principles of Microeconomics and Macroeconomics. I would also welcome the opportunity to teach intermediate macroeconomics or an upper level elective related to public finance, inequality, or macroeconomic policy. In the classroom, I emphasize clarity, structured reasoning, and real world applications that help students connect theory to contemporary policy debates. 
+
+I am enthusiastic about relocating to Miami and contributing in person to FIU’s academic community. The teaching professor track appeals to me because it allows sustained focus on undergraduate instruction while maintaining an active research agenda. In an R1 environment such as FIU, I would value the opportunity to continue developing my research while contributing meaningfully to student success and departmental service over the long term.
+
+I believe I would be a strong fit for this position because:
+\begin{enumerate}
+    \item My research background equips me to bring contemporary macroeconomic and public finance insights into core and upper level courses.
+    \item I have demonstrated commitment to high quality undergraduate teaching and am prepared to teach multiple sections of foundational courses.
+    \item I am motivated to contribute to a diverse, internationally engaged academic community that values student success and economic mobility.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics at Florida International University.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

@@ -1,0 +1,69 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Colorado School of Mines
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the tenure-track Assistant Professor position within the critical minerals initiative at the Colorado School of Mines. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics and financial economics, with an emphasis on heterogeneous agent modeling, asset markets, and policy analysis under uncertainty.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In related work, I examine how institutional trust influences income growth and asset returns. These projects rely on dynamic stochastic optimization methods, structural estimation, and large-scale micro data. At its core, solving heterogeneous agent models computationally requires deep understanding of the mathematics of dynamic decision making under uncertainty. This framework naturally extends to questions central to critical mineral markets, where price volatility, investment under uncertainty, policy risk, and long supply chains interact in complex ways.
+
+I am particularly excited about contributing to Mines’ strategic effort to strengthen the value chain of critical minerals through economic and policy research. Critical mineral markets are characterized by geopolitical risk, capital-intensive investment, energy dependence, environmental constraints, and long adjustment lags. These features make them ideal environments for applying dynamic macroeconomic and financial models. My future research agenda includes studying how uncertainty in energy and mineral markets affects investment, supply resilience, and macroeconomic volatility, as well as how policy design influences long-run supply chain adaptability. I am especially interested in collaborating with faculty in geology, mining engineering, and metallurgy to incorporate realistic technological constraints into economic models of extraction, processing, and recycling. Such transdisciplinary work aligns directly with Mines’ Earth, Energy, and Environment mission and has strong potential for external funding from agencies focused on energy security, climate transition, and industrial policy.
+
+In teaching, I am committed to rigorous, hands-on, and project-based learning. I would welcome the opportunity to teach courses in resource economics, energy economics, macroeconomics, and quantitative methods at both undergraduate and graduate levels. I incorporate empirical data analysis, simulation exercises, and structured modeling projects into my courses. I am also comfortable teaching in hybrid or online formats and supporting Mines’ growing professional and non-thesis master’s programs. My goal is to equip students with both theoretical insight and practical tools for analyzing real-world resource and policy challenges.
+
+I am enthusiastic about joining Mines’ collaborative research environment and contributing to institutional priorities through interdisciplinary engagement, mentorship, and service. The opportunity to work in Golden, Colorado, near leading research institutions and industry partners in energy and mining, is particularly appealing.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring rigorous quantitative expertise in dynamic modeling of markets under uncertainty.
+    \item My research directly connects to policy, supply chain resilience, and energy and resource economics.
+    \item I am committed to interdisciplinary collaboration and high-quality, hands-on teaching.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to Mines’ leadership in critical mineral research and education.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

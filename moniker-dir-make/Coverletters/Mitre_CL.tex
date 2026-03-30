@@ -1,0 +1,66 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+MITRE Corporation
+}
+
+\opening{Dear Members of the Hiring Committee,}
+
+I am writing to apply for the Economist position at MITRE. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My training combines advanced econometric methods, quantitative economic modeling, and large-scale data analysis, and I am enthusiastic about applying these tools to policy questions that advance the public interest.
+
+My research focuses on quantitative economic modeling and empirical analysis using large microeconomic datasets. In my job market paper, I develop and calibrate a structural life-cycle model of wealth accumulation using data from the Survey of Consumer Finances. This work requires extensive data construction, econometric analysis, and computational modeling using Python and Stata. Through this research, I have developed strong experience working with large datasets, implementing econometric techniques, and presenting results through clear figures and written summaries that communicate complex findings to broad audiences.
+
+More broadly, my work examines how economic policies and institutional environments influence financial decision-making and economic outcomes. These questions frequently require combining economic theory with empirical methods in situations where data limitations require creative modeling approaches. I am particularly interested in applying these skills to policy analysis involving trade, industrial policy, technological change, and economic resilience.
+
+MITRE’s mission of conducting independent research in the public interest is particularly compelling to me. The opportunity to collaborate across interdisciplinary teams and apply economic analysis to issues such as technology policy, trade dynamics, infrastructure resilience, and regulatory design is especially appealing. I am motivated by environments where careful quantitative analysis directly informs policy decisions and contributes to addressing complex national challenges.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+\item I bring strong quantitative training in econometrics, economic modeling, and applied policy analysis.
+\item I have extensive experience working with large datasets and implementing empirical analysis in Python and Stata.
+\item I am committed to producing rigorous, policy-relevant research and communicating results clearly to diverse stakeholders.
+\end{enumerate}
+
+Thank you very much for your time and consideration. I would welcome the opportunity to discuss how my analytical training and research experience could contribute to MITRE’s mission of applying economic analysis to complex policy challenges.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

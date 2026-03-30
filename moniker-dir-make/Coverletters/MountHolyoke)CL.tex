@@ -1,0 +1,69 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Mount Holyoke College \\
+South Hadley, MA
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Visiting Assistant Professor position in Economics at Mount Holyoke College. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations are macroeconomic modeling, wealth and income dynamics, and computational economics. I am deeply committed to excellence in undergraduate teaching and to mentoring students from broadly diverse backgrounds.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns (consistent with the literature) and characterize the distribution of the persistent component of returns to net worth. These experiences have equipped me to frame research strategies and design modeling approaches, execute econometric and simulation analysis with large micro data sets, and translate results into clear and rigorous written deliverables for both academic and practitioner audiences.
+
+I am particularly drawn to Mount Holyoke’s commitment to inclusive excellence and its strong tradition as a liberal arts college dedicated to empowering women and historically underrepresented students. In teaching introductory and intermediate economics, I aim to create classrooms that are analytically rigorous yet welcoming and discussion oriented. I design courses to emphasize clear economic reasoning while also encouraging students to connect theory to contemporary issues such as inequality, labor markets, financial markets, and public policy. In a 3/2 teaching load, I would welcome the opportunity to contribute to core courses and offer electives in macroeconomics, public finance, or quantitative methods.
+
+Mentorship is central to my approach to teaching. I prioritize structured office hours, feedback driven assignments, and active learning techniques that support students with varying academic preparation. I am attentive to creating inclusive spaces where students feel comfortable asking questions, expressing uncertainty, and developing confidence in quantitative reasoning. I would be enthusiastic about engaging fully in Mount Holyoke’s in person academic community and contributing to its mission of cultivating intellectually ambitious and socially engaged graduates.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item My research on inequality and wealth dynamics enriches undergraduate instruction in core economic topics.
+    \item I am committed to inclusive, student centered teaching and mentorship.
+    \item I value collaborative departmental engagement within a residential liberal arts environment.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics at Mount Holyoke College.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

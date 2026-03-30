@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+University of Maryland, College Park
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Lecturer position in the Department of Economics at the University of Maryland, College Park. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My training combines rigorous economic theory with extensive experience in applied data analysis and computational methods, and I am particularly enthusiastic about contributing to both the Economics curriculum and the interdisciplinary Social Data Science major.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets and integrating large-scale microdata into structural economic models. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. This work requires intensive data cleaning, statistical programming, simulation, and reproducible research practices using Python and Stata, and it has shaped the way I approach teaching data-driven economic analysis.
+
+I would be excited to teach courses within both the Economics Department and the Social Data Science major. I am prepared to teach introductory courses such as Principles of Microeconomics or Macroeconomics as well as applied courses such as Applied Economic Statistics. I am especially enthusiastic about contributing to data-oriented offerings such as Python Programming for Data Science, Data Science for Social Science, or courses that integrate economic reasoning with computational tools. In my teaching, I emphasize clear intuition, hands-on coding exercises, project-based assignments using real-world datasets, and the careful interpretation of empirical results.
+
+I strongly believe that students benefit from seeing how economic theory and computational tools complement one another. Whether teaching principles-level macroeconomics or a data-intensive methods course, I integrate structured problem-solving, programming assignments, and applied projects that reflect contemporary economic questions. I also prioritize inclusive classroom practices, structured feedback, and accessible office hours to support students from a wide range of academic and personal backgrounds.
+
+The interdisciplinary focus of the Social Data Science major is particularly appealing to me. I value opportunities to bridge economics, data science, and public policy, and I would welcome the chance to develop or contribute to courses that explore big data, machine learning applications in economics, or computational approaches to social science research.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring rigorous economic training combined with strong computational and data science skills.
+    \item I am committed to high-quality undergraduate teaching and innovative, data-driven pedagogy.
+    \item I value interdisciplinary collaboration and inclusive excellence in undergraduate education.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics and the Social Data Science program at the University of Maryland.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

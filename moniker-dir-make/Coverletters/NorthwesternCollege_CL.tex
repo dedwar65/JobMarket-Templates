@@ -1,0 +1,71 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Business and Economics Department \\
+Northwestern College \\
+Orange City, IA
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Visiting Faculty position in Economics at Northwestern College. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations are macroeconomic modeling, wealth and income dynamics, and computational economics. I am passionate about undergraduate teaching and mentoring and am committed to contributing meaningfully to a faith centered academic community.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns (consistent with the literature) and characterize the distribution of the persistent component of returns to net worth. These experiences have equipped me to frame research strategies and design modeling approaches, execute econometric and simulation analysis with large micro data sets, and translate results into clear and rigorous written deliverables for both academic and practitioner audiences.
+
+I would be enthusiastic about teaching Principles of Macroeconomics, Principles of Microeconomics, Intermediate Microeconomics, and courses such as Money and Banking or International Economics. My research in macroeconomics provides a strong foundation for explaining monetary policy, financial markets, and global economic dynamics in accessible ways. I emphasize clarity, structured problem solving, and active engagement in the classroom. I prioritize mentoring relationships and seek to help students connect economic reasoning to their academic, professional, and personal development.
+
+Northwestern College’s Christian Identity Statement and commitment to a Reformed, evangelical, and ecumenical tradition resonate with my belief that education should cultivate intellectual rigor alongside moral reflection and service. In my teaching and scholarship, I aim to approach economic questions with integrity, respect for human dignity, and awareness of how economic institutions affect communities. I value the integration of faith and learning and would welcome the opportunity to contribute to a campus community that views scholarship and teaching as part of a broader vocation.
+
+I am enthusiastic about relocating to Orange City and fully engaging in Northwestern’s in person undergraduate environment. In a three course per semester teaching load, I would be eager to contribute to the department’s curriculum and to participate actively in service and student mentorship.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I have strong preparation to teach core macroeconomics and related applied fields.
+    \item I am committed to excellent undergraduate teaching and mentoring.
+    \item I value the integration of faith, scholarship, and service in higher education.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Business and Economics Department at Northwestern College.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

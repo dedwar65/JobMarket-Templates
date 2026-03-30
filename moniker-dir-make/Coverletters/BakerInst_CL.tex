@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Baker Institute for Public Policy \\
+Rice University
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Fellow in Public Finance position at Rice University’s Baker Institute for Public Policy. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My research focuses on macroeconomics, public finance, and financial markets, with particular attention to how fiscal and monetary policy interact in shaping long-run macroeconomic stability and household financial outcomes.
+
+My research agenda centers on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in returns and examining how fiscal environments, interest rate dynamics, and debt sustainability conditions influence economic outcomes. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. This framework naturally extends to questions at the core of the Baker Institute’s Center for Tax and Budget Policy: how budget deficits, debt accumulation, and interest rate regimes interact with monetary policy to influence macroeconomic stability and fiscal sustainability.
+
+I have extensive experience building and maintaining computational economic models using Python and Stata, integrating microdata with macroeconomic structure, and simulating policy counterfactuals. My work requires combining structural modeling with empirical analysis to assess how fiscal and monetary regimes affect both aggregate outcomes and distributional consequences. I am particularly interested in studying conditions under which fiscal dominance, debt overhang, or policy misalignment may constrain central bank independence or amplify macroeconomic volatility.
+
+Beyond academic research, I am committed to producing work that informs policy audiences. I have experience presenting research to diverse audiences and translating technical findings into clear explanations suitable for policymakers and the general public. I would welcome the opportunity to contribute to the Baker Institute’s public-facing mission through white papers, policy briefs, opinion pieces, and conference presentations. I am also enthusiastic about helping organize research events and positioning the Center for Tax and Budget Policy as a leading voice on fiscal–monetary coordination.
+
+Rice University’s values of Responsibility, Integrity, Community, and Excellence resonate strongly with me, and the Baker Institute’s nonpartisan approach to public policy research aligns with my commitment to rigorous, objective analysis. As someone with strong ties to Texas, I am particularly excited about the opportunity to contribute to public finance research within Houston’s dynamic intellectual and policy environment.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item My research directly addresses the interaction between fiscal policy, monetary policy, and macroeconomic stability.
+    \item I have strong computational modeling and empirical analysis skills relevant to public finance research.
+    \item I am committed to producing rigorous, policy-relevant work and communicating it effectively to varied audiences.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Baker Institute’s research agenda and to Rice University’s broader public policy mission.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

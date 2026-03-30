@@ -1,0 +1,69 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Social Science Data and Computation Lab \\
+Dartmouth College
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Data Scientist position in the Social Science Data and Computation Lab at Dartmouth College. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, and my research relies heavily on applied microeconomic methods, empirical strategy design, and large-scale data analysis. I am enthusiastic about the opportunity to support frontier research across economics, government, and quantitative social science in a collaborative, research-facing role.
+
+My research agenda focuses on wealth inequality, financial markets, and income dynamics using nationally representative micro data. In my job market paper, I calibrate a life cycle model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. In related work using the Health and Retirement Study, I examine how institutional trust influences income growth and asset returns. These projects require careful data cleaning and documentation, construction of reproducible workflows, structural and reduced-form empirical strategies, and statistical analysis in Stata and R. I routinely manage complex datasets, implement replication standards, and prepare publication-quality tables and figures.
+
+I am particularly drawn to this role because it emphasizes collaboration and empirical design. I have experience working closely with faculty and coauthors to develop research questions, structure empirical strategies, and translate theoretical ideas into implementable data analysis plans. My applied micro training equips me to support causal inference strategies including panel data methods, fixed effects models, instrumental variables approaches, and quasi-experimental designs. I am comfortable managing multiple research projects simultaneously and ensuring that code and documentation are organized for long-term transparency and reproducibility.
+
+I also value the opportunity to teach short workshops on applied data skills. Throughout my graduate training, I have mentored students in Stata and Python, helped structure empirical assignments, and emphasized clear interpretation of regression results. I enjoy demystifying statistical tools and helping students build confidence with applied data analysis. I would welcome the opportunity to contribute to undergraduate skill development in a hands-on and accessible way.
+
+Dartmouth’s commitment to academic excellence within a culture of mutual respect strongly resonates with me. My research addresses inequality, opportunity, and institutional trust, and I am committed to fostering inclusive research environments in which students and collaborators from diverse backgrounds feel supported. I strive to communicate complex quantitative results clearly and to cultivate collaborative spaces where diverse perspectives strengthen empirical inquiry.
+
+I am enthusiastic about contributing in residence in Hanover and engaging fully with faculty and students across departments. I believe I would be a strong fit for this role because:
+
+\begin{enumerate}
+    \item I bring strong applied microeconomic training and extensive experience with Stata and R.
+    \item I prioritize clean research workflows, documentation, and reproducibility.
+    \item I value collaborative research environments and enjoy supporting students in developing applied data skills.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to Dartmouth’s Social Science Data and Computation Lab.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

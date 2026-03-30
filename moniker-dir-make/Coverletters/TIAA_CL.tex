@@ -1,0 +1,67 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+TIAA Institute
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Postdoctoral Research Fellow position at the TIAA Institute. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My research focuses on household finance, wealth accumulation, and institutional determinants of financial security, and I am enthusiastic about contributing to research that directly informs retirement policy and financial decision-making.
+
+My research agenda centers on understanding how heterogeneity in returns and institutional environments shapes household wealth accumulation over the life cycle. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. This work combines structural modeling with detailed microdata analysis and speaks directly to questions of retirement preparedness, portfolio risk exposure, and long-run financial security.
+
+In related empirical work, I use the Health and Retirement Study to examine how institutional trust and economic behavior interact over time. This project requires working with longitudinal survey data, constructing panel measures, and carefully linking economic outcomes to demographic and institutional variables. Through this work, I have developed substantial experience cleaning and managing large datasets, implementing econometric analysis in Stata and Python, and maintaining transparent and reproducible research workflows.
+
+I am particularly excited about the TIAA Institute’s emphasis on survey design, sampling strategies, and linking survey and administrative data. My training has included developing data construction protocols, constructing survey-based financial measures, and simulating policy-relevant counterfactuals. I would welcome the opportunity to contribute to the design and implementation of new survey instruments and to integrate administrative and survey data in ways that enhance measurement of household financial decision-making and retirement security.
+
+Beyond technical expertise, I am committed to communicating research clearly to diverse audiences. I have presented research in academic seminars and conferences and have experience translating complex quantitative findings into accessible explanations for policy-relevant discussions. I am motivated by the opportunity to produce research that maintains academic rigor while directly informing financial planning, longevity risk management, and retirement system design.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item My research directly engages questions of household finance and life-cycle wealth accumulation.
+    \item I have extensive experience working with large longitudinal survey datasets and conducting econometric analysis.
+    \item I am committed to producing rigorous, policy-relevant research and communicating findings clearly to varied audiences.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the TIAA Institute’s research on household finance and retirement financial security.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

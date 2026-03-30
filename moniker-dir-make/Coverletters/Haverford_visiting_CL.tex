@@ -1,0 +1,70 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Haverford College
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Visiting Assistant Professor position in the Department of Economics at Haverford College for the 2026–27 academic year. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics and financial economics, and I have experience teaching undergraduate economics courses.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In related work using the Health and Retirement Study, I examine how institutional trust influences income growth and asset returns. These projects require integrating theoretical modeling with empirical analysis, and they inform the way I approach teaching quantitative reasoning and applied economic methods.
+
+I am particularly drawn to Haverford’s liberal arts mission and its emphasis on close student–faculty engagement. I would be excited to teach introductory statistics courses and electives in macroeconomics or financial economics. In statistics courses, I emphasize intuition, careful interpretation of results, and hands-on engagement with real data using software such as Stata and Python. In upper-level courses, I integrate current research, policy debates, and structured empirical exercises to help students connect economic theory to real-world questions. I would also welcome the opportunity to supervise senior theses, guiding students through the process of identifying research questions, designing empirical strategies, and presenting clear written analysis.
+
+I am committed to fostering inclusive classroom environments that encourage participation from students of diverse backgrounds and perspectives. My research addresses inequality, opportunity, and institutional trust, and I bring those themes into classroom discussion in ways that promote respectful dialogue and critical thinking. I strive to create transparent expectations, accessible office hours, and structured feedback mechanisms that support student success in a liberal arts context.
+
+I am enthusiastic about contributing to Haverford’s vibrant academic community and engaging closely with motivated undergraduate students. The opportunity to teach in a setting that values intellectual curiosity, collaboration, and mentorship is especially appealing to me.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring strong preparation in macroeconomics and quantitative methods suitable for both introductory and advanced courses.
+    \item I am committed to inclusive, student-centered teaching in a liberal arts environment.
+    \item I value close mentorship and thesis supervision as central components of undergraduate education.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics at Haverford College.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

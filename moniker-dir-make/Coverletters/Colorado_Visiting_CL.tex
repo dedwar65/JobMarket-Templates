@@ -1,0 +1,70 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics and Business \\
+Colorado College
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Visiting Assistant Professor position in the Department of Economics and Business at Colorado College. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics and financial economics, and I have experience teaching undergraduate economics courses.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns and characterize the distribution of the persistent component of returns to net worth.
+
+I am especially drawn to Colorado College’s Block Plan. The opportunity to teach one course at a time in an intensive three and a half week format allows for deep engagement, immersive discussion, and creative project-based learning. In Principles of Macroeconomics, I would emphasize real-world policy questions, including inflation dynamics, monetary policy, inequality, and energy shocks, integrating data analysis and structured problem solving throughout the block. For upper-level electives, I would design courses in areas such as Macroeconomic Inequality, Monetary Policy and Financial Markets, or Energy and the Macroeconomy, incorporating applied data projects, policy simulations, and student-led research presentations. The focused structure of the Block Plan also lends itself to field-based or experiential components, and I would be enthusiastic about integrating local economic analysis or collaborative research projects into coursework.
+
+I welcome the opportunity to advise senior theses and mentor students individually. My own research process involves careful model building, empirical analysis, and iterative feedback, and I value guiding students through independent inquiry. I am committed to creating inclusive classroom environments in which students from diverse backgrounds feel supported and challenged. I strive to design courses that foreground economic opportunity, institutional structures, and distributional questions, while fostering respectful dialogue across perspectives. Colorado College’s commitment to antiracism, diversity, equity, inclusion, and belonging strongly resonates with my teaching philosophy, and I would contribute to these goals through inclusive pedagogy, transparent assessment practices, and active mentorship.
+
+I am enthusiastic about living and working in Colorado Springs and contributing fully to the intellectual and residential community at Colorado College. The opportunity to focus on high-quality undergraduate teaching within a distinctive academic structure is particularly appealing to me.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring strong preparation in macroeconomics suitable for both principles and upper-level instruction.
+    \item I am committed to immersive, project-based, and student-centered teaching.
+    \item I value inclusive pedagogy and close mentorship within a collaborative academic community.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics and Business at Colorado College.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

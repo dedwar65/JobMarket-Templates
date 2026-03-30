@@ -1,0 +1,69 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+College of Social Sciences and Humanities \\
+Northeastern University
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Teaching Professor position in the Department of Economics at Northeastern University. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. I am particularly excited about the opportunity to contribute to Northeastern’s Experiential Liberal Arts mission through high-quality macroeconomics instruction at both the undergraduate and graduate levels.
+
+My research agenda focuses on macroeconomics and financial economics, particularly the role of institutional design and heterogeneous returns in shaping wealth accumulation and economic inequality. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. While my research is technical, it directly informs my teaching: I emphasize economic intuition, quantitative reasoning, and the careful integration of theory, data, and policy.
+
+I would be enthusiastic about teaching large sections of Principles of Macroeconomics, a course that plays a foundational role in the curriculum. I view large-enrollment courses not as a constraint but as an opportunity to develop clear structure, engaging lectures, interactive problem-solving exercises, and data-driven demonstrations that make macroeconomic concepts accessible and relevant. I prioritize organization, transparency in grading, and consistent communication to ensure that students in large sections feel supported and challenged.
+
+At the graduate level, I am prepared to contribute to MS-level macroeconomic theory courses and, depending on departmental needs, PhD-level macroeconomics. My training includes dynamic programming, heterogeneous agent modeling, and quantitative simulation methods. I integrate computational tools such as Stata and Python into coursework and would welcome the opportunity to incorporate computational economics, data-intensive methods, or machine learning applications where they complement macroeconomic analysis. I believe that modern macroeconomics education should equip students not only with theoretical tools but also with practical computational skills.
+
+Northeastern’s commitment to experiential learning and global engagement strongly resonates with my approach to teaching. I incorporate real-world policy debates, empirical datasets, and applied projects into coursework, encouraging students to connect macroeconomic models to contemporary economic issues. I am also committed to advising and mentorship, and I value helping students translate analytical training into academic and professional development.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring rigorous training in macroeconomics combined with a strong commitment to teaching excellence.
+    \item I am prepared to manage large-enrollment courses effectively while maintaining high academic standards.
+    \item I integrate quantitative and computational tools into macroeconomics instruction in ways that support experiential learning.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to Northeastern University’s teaching mission and to support both its undergraduate and graduate programs in macroeconomics.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

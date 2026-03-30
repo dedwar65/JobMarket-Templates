@@ -1,0 +1,131 @@
+\RequirePackage{mymoniker}    % Replace CarrollCD in mymoniker.sty with your LastnameFirstNameMiddleName
+\RequirePackage{dissertation} % required extra stuff
+\documentclass{scrartcl}
+
+\usepackage{color,hyperref}
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\usepackage{dirtytalk}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=authoryear]{biblatex} % You can change the style if you prefer a different citation style
+\addbibresource{References2.bib}
+
+\title{Interview responses}
+\author{Decory Edwards}
+% Or replace with a specific date, or leave empty: \date{}
+
+
+\begin{document}
+\maketitle
+
+\section{\large Future Research and Career Aspirations}
+
+\par Broadly speaking, I consider myself an economist interested in the intersection between macroeconomics and inequality. My primary interests were wealth inequality and its determinants, which naturally pushed me in the direction of household finance. Combining theoretical predictions and empirical evidence to answer questions and considering the effects of reactive policy decisions are two hallmark traits of modern economic research. I believe the carefulness needed to accomplish these tasks has sharpened my problem-solving ability. I know that I can carry that into any work I am asked to do moving forward.
+
+\section{Job market paper}
+
+\par My job market paper is at the intersection of wealth inequality and macroeconomics. The core question I answer is: \textit{Does allowing for heterogeneous returns in a standard consumption–saving framework help explain the skewed distribution of wealth observed in the data?}
+
+\vspace{0.5em}
+\noindent
+The early literature on wealth inequality focused on whether skewed labor earnings alone could explain the shape of the wealth distribution. But while income is unequal, wealth is far more skewed, especially in the upper tail. Early models then tried adding stochastic returns to wealth as an exogenous process, which did help match the distribution empirically. However, those models do not link wealth accumulation directly to households’ decisions about saving and consumption.
+
+\vspace{0.5em}
+\noindent
+My paper is in line with heterogeneous-agent macro models that contribute to this discussion on wealth inequality. In my model, agents face \emph{ex-post} income uncertainty modeled as permanent and transitory shocks drawn from a common distribution. In this setting, otherwise identical households (same preferences and discount factors) choose different optimal saving paths based on their realized shock histories. They also face \emph{ex-ante} heterogeneity in returns: each household draws a constant, lifetime rate of return from a uniform distribution. This is the object estimated in the paper so that simulated wealth moments closely match those in the Survey of Consumer Finances.
+
+\vspace{0.5em}
+\noindent
+I find that introducing return heterogeneity on top of labor income risk substantially improves the model’s fit to both targeted and untargeted moments of the wealth distribution. Unlike parameters such as time preference or risk aversion, household returns are observable, and my estimated distribution aligns closely with the empirical evidence from Norwegian administrative data on returns to wealth.
+
+\vspace{0.5em}
+\noindent
+My contribution to the literature can be found in the fact that my framework performs better at matching the lower and middle portions of the wealth distribution, and this difference matters quantitatively. In a similar model which also introduces heterogeneity in returns, they are able to match the top 1--5\% of the wealth distribution quite closely. However, in their setting, the bottom 60 percent holds far too much wealth relative to the data.
+
+In my case, the presence of income uncertainty generates a precautionary-savings motive that leads households to optimally hold buffer-stock wealth. The stochastic labor-income process therefore produces genuinely low-wealth households, and that feature delivers a realistic distribution of MPCs. These poorer households are in the hand-to-mouth region where consumption responds strongly to income shocks. As a result, the aggregate MPCs in my model line up well with empirical estimates and with the broader HA-macro literature.
+
+
+\vspace{0.5em}
+\noindent
+
+There are two key policy implications. They are both centered on the idea that when households earn different rates of return, a tax on capital income is no longer equivalent to a tax on wealth. A \textit{wealth tax} effectively taxes the entire stock of wealth regardless of the return it generates. A \textit{capital-income tax} applies only to the flow of investment income.
+
+For the first implication, when returns differ across households, a capital-income tax reduces wealth inequality more than an equivalent wealth tax, because it places a larger burden on households earning high returns.
+
+\par Second, I measure welfare by comparing lifetime utility for newborn households under each tax, both for expected lifetime utility and lifetime utility conditional on the realization of the return type. The realized returns are those estimated to match the SCF wealth moments. I find that the capital tax is preferred by most return types; specifically, six out of seven.
+
+This matters because wealth and capital-income taxation are frequently debated in policy circles. My findings suggest that heterogeneity in returns should play a central role in evaluating such proposals, both for their distributional impact and for welfare consequences.
+
+
+\section{Teaching experience}
+
+\par I’ve led weekly sections and held office hours for introductory macro, intermediate macro,  and an upper-level macro policy seminar, and I’ve also tutored students at multiple levels. I’m prepared to teach Principles and Intermediate Macroeconomics, and I’m confident I can teach Microeconomics as well. 
+
+\section{Electives}
+
+\par One would be a course on \textit{Economic Inequality and Computational Methods},
+where students learn how economists study wealth inequality using simple
+consumption–saving models. Students would use computational tools to simulate
+household decisions and examine how differences in income, savings behavior,
+or returns generate inequality.
+
+\par Another course would focus on \textit{Computing the Welfare Effects of Tax Policy}.
+In that class, students would learn the foundations of dynamic economic models,
+including value functions, Bellman equations, and policy counterfactuals.
+We would use these tools to evaluate how different tax policies affect household
+behavior and economic welfare.
+
+\section*{Prepared Interview Responses}
+
+\begin{enumerate}
+
+\item \textbf{What classes are you prepared to teach?}
+
+I would be very comfortable teaching Principles of Microeconomics and Macroeconomics, Intermediate Microeconomics, and applied statistics or quantitative methods courses. My teaching emphasizes building strong economic intuition and then showing students how economists use data and models to answer real-world questions.
+
+\item \textbf{What are your thoughts on AI in the classroom?}
+
+I think AI is a tool students will inevitably use in their professional lives, so the goal is to teach responsible use rather than simply banning it. I would allow it for brainstorming or explanations but design assignments that require students to demonstrate their own economic reasoning and interpretation.
+
+\item \textbf{What electives or independent study courses would you offer?}
+
+One course I would enjoy teaching is \textit{Economic Inequality and Computational Methods}, where students use simple consumption--saving models to understand how income dynamics and returns generate wealth inequality. Another would be \textit{Computing the Welfare Effects of Tax Policy}, where students learn dynamic models, Bellman equations, and policy counterfactuals to evaluate the welfare effects of tax reforms.
+
+\item \textbf{How do you engage students in large introductory courses?}
+
+I focus on frequent engagement through short questions weaved into the lecture. Figures and tables can be used to help students grasp concepts. Breaking off into groups and working on short exercises together can also be helpful in the large class setting.
+
+\item \textbf{How do you handle students who struggle with math or graphs in economics?}
+
+I would try to start with explaining to students that math is language, and much of the confusion and being on the same page regarding what terms mean and how they connect to the mathematical expressions. From there, I believe being able to explain the same concepts in different ways is important. Asking the student to explain what they've learned aloud is also useful when learning mathematics. 
+
+\item \textbf{How do you assess student learning?}
+
+  I use a mix of graded problem sets, exams, and short applied assignments that require students to both compute answers and explain the underlying reasoning. Graded assignments are still the best way to track one's learning progress.
+  
+\item \textbf{How do you make economics relevant to non-majors?}
+
+I connect economic concepts to issues students encounter in everyday life such as inflation, income, taxes, and investments. Showing how economic reasoning applies to real decisions helps students see the value of the discipline.
+
+\item \textbf{Describe a successful class or teaching moment.}
+
+One of the most rewarding moments is when an individual goes from not understanding to understanding a concept. Helping a student convince themselves of the material is at the heart of teaching, and I feel good being able to do that for others like my own teachers did for me. 
+
+\item \textbf{How do you support first-generation or diverse students?}
+
+I try to make expectations transparent and create an environment where students feel comfortable asking questions and seeking help. Clear structure, accessible office hours, and encouragement help students from different backgrounds succeed.
+
+\item \textbf{What would a typical class session look like?}
+
+A typical class begins with introducing the concepts which will be covered for the day. Depending on the course, a short review of where we left off may be useful. I would like to rely heavily on student feedback and ask questions so that they are actively participating during lecture. That said, this is influenced by the size of the course. If possible, I'd like to incorporate short exercises towards the end of the course to actively reinforce concepts. 
+
+\item \textbf{Why are you interested in a teaching-focused position rather than a research university?}
+
+Teaching-focused institutions allow faculty to invest deeply in the classroom and in mentoring students. I've been on college campuses for the past 11 years since graduating high school. I believe I've built up a particular human capital as someone who knows how to navigate the campus environment as a student. I believe I could be a valuable resource to students in this regard. 
+
+\end{enumerate}
+
+\end{document}

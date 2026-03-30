@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+The Hershey Company \\
+Frisco, TX
+}
+
+\opening{Dear Hiring Committee,}
+
+I am writing to express my interest in the Data Scientist position with The Hershey Company in Frisco, Texas. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations are macroeconomic modeling, econometrics, and computational methods, with extensive experience applying statistical and causal inference tools to large scale datasets to inform decision making.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns and characterize the distribution of the persistent component of returns to net worth. These experiences have equipped me to translate ambiguous research questions into formal modeling and data problems, build and validate scalable computational algorithms, analyze large observational datasets, and communicate findings clearly to both technical and non technical audiences.
+
+I am particularly drawn to this role because it combines rigorous quantitative modeling with direct business impact. Forecasting demand, optimizing inventory or pricing decisions, evaluating A/B tests, and measuring causal impact all require the same core skills that I use in my research: careful model development, validation, and interpretation under uncertainty. My work routinely involves simulation, prediction, and policy counterfactual analysis using Python and Stata, and I am comfortable collaborating with cross functional teams to translate quantitative findings into actionable recommendations. I am especially motivated by the opportunity to work on models that influence product strategy and operational decisions in a setting where results are implemented and evaluated in real time.
+
+I am enthusiastic about living and working in the Dallas area and fully participating in the hybrid, in person collaboration model described in the posting. I value structured teamwork and cross functional problem solving and am comfortable engaging with stakeholders across technical and business domains. I am also drawn to the long term growth potential of this role, which would allow me to deepen my applied research skills while continuing to develop my expertise in forecasting, optimization, and causal analysis in a high impact commercial environment.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I have extensive experience developing, validating, and implementing quantitative models using large scale observational data.
+    \item My training in econometrics and causal inference prepares me to design and interpret experiments and quasi experimental analyses.
+    \item I am comfortable communicating technical results clearly to diverse stakeholders and aligning analytical insights with strategic business objectives.
+\end{enumerate}
+
+Thank you very much for your time and consideration. I would welcome the opportunity to contribute to The Hershey Company’s data science team.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

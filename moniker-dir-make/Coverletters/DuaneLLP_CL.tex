@@ -1,0 +1,66 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+Duane Morris LLP
+}
+
+\opening{Dear Members of the Hiring Committee,}
+
+I am writing to apply for the Economist/Statistician position with Duane Morris LLP. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My training combines rigorous economic modeling with applied econometric analysis of large datasets, and I am enthusiastic about applying these skills to complex litigation and expert analysis.
+
+My research focuses on quantitative economic modeling and the analysis of household financial behavior using large microeconomic datasets. In my job market paper, I develop and calibrate a structural life-cycle model of household wealth accumulation using data from the Survey of Consumer Finances. This work requires extensive data cleaning, statistical analysis, and simulation modeling in Python and Stata, as well as the presentation of results through clear tables, figures, and written explanations. Through this work I have developed strong experience working with complex datasets, implementing econometric models, and translating technical results into clear and accessible insights.
+
+Beyond my dissertation research, I have substantial experience constructing datasets from multiple sources, implementing regression analysis and simulation methods, and producing empirical summaries suitable for academic and policy audiences. My work frequently involves interpreting statistical results, identifying methodological limitations, and communicating quantitative findings to individuals who may not have specialized technical training. These experiences align closely with the analytical demands of litigation support, where careful empirical analysis and clear communication are essential.
+
+I am particularly interested in the opportunity to apply economic and statistical methods to legal questions such as damages estimation, labor and employment disputes, and market behavior analysis. The collaborative nature of litigation support—working closely with attorneys, experts, and clients to evaluate evidence and develop analytical frameworks—is especially appealing to me. I am motivated by environments where quantitative analysis directly informs strategic decision-making.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+\item I bring strong quantitative training in econometrics, statistical modeling, and economic analysis.
+\item I have extensive experience working with large datasets and implementing empirical analysis in Python and Stata.
+\item I am skilled at translating complex statistical results into clear explanations suitable for non-technical audiences.
+\end{enumerate}
+
+Thank you very much for your time and consideration. I would welcome the opportunity to discuss how my analytical training and research experience could contribute to the work of Duane Morris LLP.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

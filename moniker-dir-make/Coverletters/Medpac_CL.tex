@@ -1,0 +1,66 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+Medicare Payment Advisory Commission \\
+Washington, DC
+}
+
+\opening{Dear Members of the Hiring Committee,}
+
+I am writing to apply for the Health Policy Analyst position at the Medicare Payment Advisory Commission. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My research and teaching focus on applied microeconomics, public policy, and quantitative analysis, and I am eager to contribute rigorous, nonpartisan analysis in support of MedPAC’s mission to advise the U.S.\ Congress on Medicare payment policy.
+
+My research agenda examines how institutional design and financial incentives shape economic outcomes. In my job market paper, I calibrate a life-cycle heterogeneous agent model to evaluate how differences in returns and policy environments affect wealth accumulation and distributional outcomes. This work requires translating complex policy environments into tractable analytical frameworks, simulating alternative policy scenarios, and clearly communicating quantitative findings. These skills are directly relevant to evaluating current and alternative Medicare payment systems and assessing their implications for providers, beneficiaries, and federal spending.
+
+I have extensive experience conducting primary data analysis using Stata and Python, including working with large administrative and survey datasets, constructing policy-relevant variables, and performing regression and simulation analyses. My work emphasizes transparency, reproducibility, and careful documentation. I am comfortable framing policy questions, designing research plans, synthesizing academic literature, and presenting findings in clear written memoranda and oral briefings to both technical and nontechnical audiences.
+
+I am particularly drawn to MedPAC’s role as a small, collaborative, and nonpartisan analytical body. I value constructive feedback and team-based research environments, and I would welcome the opportunity to present analysis in public Commission meetings and support Congressional staff through technical memoranda and briefings. The opportunity to evaluate Medicare payment policies, investigate regulatory frameworks, and simulate policy alternatives in service of evidence-based policymaking strongly aligns with my professional goals.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring strong quantitative skills in applied microeconomic analysis and policy simulation.
+    \item I have experience translating complex analytical work into clear written and oral communication.
+    \item I am committed to rigorous, objective analysis in a nonpartisan policy environment.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to MedPAC’s important work supporting the Medicare program and the U.S.\ Congress.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

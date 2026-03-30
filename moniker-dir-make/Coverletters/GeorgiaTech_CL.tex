@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+School of Economics \\
+Georgia Institute of Technology
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Postdoctoral Scholar position in the School of Economics at the Georgia Institute of Technology. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics and financial economics, with a focus on wealth inequality, heterogeneous agent modeling, and the interaction between financial markets and long-run economic dynamics.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In related work using the Health and Retirement Study, I examine how institutional trust influences income growth and asset returns. I find a hump shaped relationship for trust and returns and characterize the distribution of the persistent component of returns to net worth.
+
+My research contributes to broader questions in growth, development, and economic dynamics. By modeling investment, savings behavior, and financial market participation under uncertainty, I seek to better understand how micro-level heterogeneity aggregates into macroeconomic outcomes. The School of Economics at Georgia Tech, with its strengths in innovation, industrial organization, and applied microeconomic research, provides an intellectually exciting environment in which to extend this work. In particular, I am interested in exploring how technological change, financial innovation, and market structure influence wealth accumulation and economic mobility, areas that align naturally with Georgia Tech’s interdisciplinary strengths.
+
+As a postdoctoral scholar, I would focus on advancing my research agenda toward publication in leading journals while engaging actively in seminars, workshops, and collaborative research. I value collegial research environments and am eager to contribute to Georgia Tech’s vibrant intellectual community.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I conduct rigorous, publication-oriented research at the frontier of macroeconomics and financial economics.
+    \item My work connects micro-level heterogeneity to broader questions of growth and economic dynamics.
+    \item I value collaborative, interdisciplinary academic environments.
+\end{enumerate}
+
+Thank you very much for your consideration. I would be honored to contribute to the School of Economics at Georgia Tech.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

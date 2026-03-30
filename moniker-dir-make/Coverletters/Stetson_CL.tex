@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Stetson University
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Visiting Assistant Professor of Economics position at Stetson University. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My research and teaching interests in macroeconomics, financial economics, and political economy align well with Stetson’s rigorous, interdisciplinary liberal arts mission.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. In related work, I examine how institutional trust shapes economic outcomes. These projects connect closely to themes central to Stetson’s curriculum, including globalization, inequality, development, and environmental and institutional change.
+
+I am deeply committed to undergraduate education in a liberal arts environment. In the classroom, I emphasize clear economic intuition, careful empirical reasoning, and structured engagement with real-world policy debates. I incorporate data analysis exercises and contemporary applications to help students connect theoretical tools to pressing global challenges. I would be enthusiastic about contributing to Stetson’s experiential and integrative learning initiative, including the possibility of developing an immersive, student-centered course that connects macroeconomic or development themes to community engagement or applied research.
+
+Stetson’s emphasis on senior research projects strongly resonates with me. I value close mentorship and would welcome the opportunity to supervise independent student research, guiding students through the process of formulating questions, designing empirical strategies, and communicating their findings effectively. My own research experience equips me to mentor students in quantitative methods, policy analysis, and interdisciplinary applications of economics.
+
+I am also committed to fostering inclusive academic environments. My research engages questions of inequality, institutional trust, and economic opportunity, and I bring those themes into the classroom in ways that promote respectful dialogue and engagement across differences. I strive to create structured, supportive learning environments in which students from diverse backgrounds can develop confidence in their analytical abilities.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring rigorous macroeconomic training and an active scholarly agenda consistent with Stetson’s teacher-scholar model.
+    \item I am committed to high-quality undergraduate teaching and experiential learning.
+    \item I value mentorship, inclusive excellence, and interdisciplinary engagement central to Stetson’s mission.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Department of Economics and the broader College of Arts and Sciences at Stetson University.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

@@ -1,0 +1,69 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Levy Economics Institute \\
+Bard College \\
+Annandale-on-Hudson, NY
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Research Scholar position in the Money and Financial Structure program at the Levy Economics Institute. I am a Ph.D.\ candidate in the Department of Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to receive my degree in May 2026. My primary specializations are macroeconomic modeling, wealth and income dynamics, and computational economics, with a strong focus on financial markets and macro financial linkages.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns (consistent with the literature) and characterize the distribution of the persistent component of returns to net worth. These experiences have equipped me to frame research strategies and design modeling approaches, execute econometric and simulation analysis with large micro data sets, and translate results into clear and rigorous written deliverables for both academic and practitioner audiences.
+
+I am particularly drawn to the Levy Institute’s longstanding engagement with questions of macroeconomic and financial instability, especially through the intellectual legacy of Hyman Minsky. My work on heterogeneous returns and portfolio dynamics is closely related to questions about financial fragility, risk concentration, and the evolution of balance sheets across sectors. Understanding how financial institutions allocate risk, how asset price dynamics affect household balance sheets, and how financial innovation interacts with macroeconomic stability aligns closely with the Levy Institute’s research mission. I am also interested in the macro financial implications of climate transition risks and technological change, including developments in AI, and would welcome the opportunity to explore these themes within a pluralistic framework that integrates institutional analysis with formal modeling.
+
+I would be enthusiastic about contributing to the Levy Institute’s Master’s program in Economic Theory and Policy through teaching and mentoring. I value intellectually open environments that encourage debate across methodological traditions. I would welcome relocating to Annandale-on-Hudson and engaging fully in the Institute’s research community. A Research Scholar position would provide an ideal setting to further develop my research agenda on macro finance and financial instability while contributing to policy relevant scholarship.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item My research directly addresses financial structure, return dynamics, and macroeconomic instability.
+    \item I am committed to rigorous but pluralistic economic inquiry that connects formal modeling to institutional analysis.
+    \item I bring experience in both research collaboration and graduate instruction.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Levy Economics Institute’s research program.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

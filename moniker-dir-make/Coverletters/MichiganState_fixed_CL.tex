@@ -1,0 +1,66 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jhu.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Michigan State University
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Fixed Term faculty position (Instructor/Assistant Professor/Associate Professor) in the Department of Economics at Michigan State University. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary experience and professional commitment center on high-quality undergraduate instruction in economics and quantitative methods.
+
+My research agenda focuses on macroeconomics and financial economics, particularly the role of institutional design and financial returns in shaping wealth accumulation and economic inequality. In my job market paper, I calibrate a life-cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in portfolio returns. While my research is technical in nature, it has strongly shaped my teaching approach: I emphasize clear intuition, structured problem solving, and the careful connection between theory and real-world economic phenomena.
+
+I have experience teaching undergraduate economics courses and working closely with students at varying levels of preparation. In the classroom, I prioritize clarity, organization, and engagement. I aim to make economics accessible without sacrificing analytical rigor, encouraging students to think critically about incentives, policy design, and economic tradeoffs. Whether teaching principles-level courses or more advanced material, I incorporate real data, empirical examples, and policy discussions to help students see the relevance of economic tools. I also value mentorship and student advising, and I strive to maintain accessible office hours and structured feedback to support student success.
+
+Michigan State University’s strong commitment to undergraduate education and high teaching standards is especially appealing to me. I would be enthusiastic about teaching introductory and intermediate economics courses and contributing to departmental instructional needs. I am committed to maintaining high standards in course preparation, grading, communication, and coordination with departmental leadership.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I bring rigorous training in economics combined with a strong dedication to undergraduate instruction.
+    \item I emphasize clarity, enthusiasm, and accessibility in the classroom.
+    \item I am committed to upholding departmental teaching standards and contributing positively to the academic community.
+\end{enumerate}
+
+Thank you for your consideration. I would welcome the opportunity to contribute to the Department of Economics at Michigan State University.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

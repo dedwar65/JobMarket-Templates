@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Search Committee \\
+Department of Economics \\
+Brown University
+}
+
+\opening{Dear Members of the Search Committee,}
+
+I am writing to apply for the Postdoctoral Research Associate position funded through the Orlando Bravo Center for Economic Research at Brown University. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics and financial economics, with an emphasis on heterogeneous agent models, wealth inequality, and asset return dispersion.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns and characterize the distribution of the persistent component of returns to net worth.
+
+The opportunity to pursue research without teaching obligations in a vibrant intellectual community is particularly appealing. Brown’s strength in macroeconomics, applied microeconomics, and political economy creates an ideal environment for advancing my research agenda. I am especially interested in engaging with faculty whose work intersects with macroeconomic dynamics, inequality, and financial markets. Over the next two years, I plan to extend my current work by incorporating general equilibrium feedback effects and exploring how heterogeneity in returns interacts with monetary and fiscal policy. The Orlando Bravo Center’s support for frontier economic research would provide an ideal setting to further develop these projects toward publication in leading journals.
+
+I am also committed to contributing to Brown’s diverse and inclusive academic community. My research addresses economic mobility, opportunity, and financial participation, and I value interdisciplinary dialogue across perspectives and methodologies. I welcome collaboration, workshop participation, and engagement with graduate students and faculty to foster a robust and supportive research environment.
+
+I believe I would thrive at Brown because:
+\begin{enumerate}
+    \item My research agenda complements strengths in macroeconomics and financial economics within the department.
+    \item I am committed to innovative, publication-oriented research at the frontier of heterogeneous agent macroeconomics.
+    \item I value collaborative, inclusive academic environments that support rigorous inquiry and intellectual exchange.
+\end{enumerate}
+
+Thank you very much for your consideration. I would be honored to contribute to the research community at Brown University.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

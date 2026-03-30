@@ -1,0 +1,70 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+Research Department \\
+Federal Reserve Bank of Dallas
+}
+
+\opening{Dear Members of the Hiring Committee,}
+
+I am writing to apply for the Research Economist position at the Federal Reserve Bank of Dallas. I am a Ph.D.\ candidate in Economics at Johns Hopkins University (advisors: Christopher D.\ Carroll, Nicholas W.\ Papageorge, and Stelios Fourakis), and I expect to complete my degree in May 2026. My primary research fields are macroeconomics, monetary economics, and financial economics, with an emphasis on heterogeneous agent modeling and quantitative policy analysis.
+
+My research agenda focuses on the ability of macroeconomic models to generate empirically realistic distributions of wealth and income over the life cycle. A key driver of that work is modeling heterogeneity in the rate of return on assets, and understanding how return dispersion contributes to portfolio accumulation across households.
+
+In my job market paper, I calibrate a life cycle heterogeneous agent model to match wealth moments from the Survey of Consumer Finances by allowing households to differ in their portfolio returns. The model helps explain observed wealth concentration and return dispersion. In a related research project using the Health and Retirement Study, I examine how trust influences both income growth and asset returns. I find a hump shaped relationship for trust and returns and characterize the distribution of the persistent component of returns to net worth.
+
+My research is directly relevant to monetary policy and macroeconomic stabilization. By studying how heterogeneity shapes household responses to income and return shocks, my work informs our understanding of monetary transmission, consumption dynamics, asset market participation, and distributional consequences of policy. I use large-scale micro data, structural modeling, and computational simulation methods to analyze policy counterfactuals and quantify aggregate implications. These tools position me well to support the Bank’s president in her FOMC responsibilities by providing rigorous research, clear policy insights, and well-structured briefings grounded in both theory and empirical evidence.
+
+I am particularly drawn to the Federal Reserve Bank of Dallas because of its leadership in macroeconomic research and its strong engagement with issues central to the Fifth District and national policy—especially energy markets and international macroeconomic dynamics. Given the importance of energy to both Texas and global macroeconomic conditions, I am especially interested in contributing research that connects household heterogeneity, asset markets, and energy price shocks to broader monetary policy considerations. I would welcome the opportunity to share research with senior leadership, contribute to policy discussions, and collaborate with colleagues across the Federal Reserve System.
+
+Dallas is also a preferred destination for me professionally and personally. I am enthusiastic about contributing in person to the Research Department’s collaborative environment and engaging fully with the Bank’s mission to promote a strong financial system and a healthy economy.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I conduct rigorous, publication-quality research in macroeconomics and financial economics.
+    \item My work is directly relevant to monetary policy, asset markets, and aggregate dynamics.
+    \item I am committed to translating complex quantitative analysis into clear policy-relevant insights.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the research and policy mission of the Federal Reserve Bank of Dallas.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

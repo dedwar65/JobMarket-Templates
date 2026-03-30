@@ -1,0 +1,68 @@
+% ============================================
+% Johns Hopkins Letter Template
+% ============================================
+
+\documentclass[11pt,letterpaper]{letter}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\newcommand{\PutJHULogoFG}[1]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageUpperLeft{%
+      \hspace{10mm}%
+      \raisebox{-38mm}{%
+        \includegraphics[width=6cm]{#1}%
+      }%
+    }%
+  }%
+}
+
+\signature{Decory Edwards}
+\address{
+Department of Economics \\
+Johns Hopkins University \\
+Baltimore, MD 21218 \\
+\texttt{dedwar65@jh.edu}
+}
+
+\begin{document}
+\PutJHULogoFG{Images/jhulogo.png}
+
+\begin{letter}{
+Hiring Committee \\
+American Institutions Program \\
+American Academy of Arts and Sciences
+}
+
+\opening{Dear Members of the Hiring Committee,}
+
+I am writing to express my interest in the Program Officer position for American Institutions, Society, and the Public Good. I am a Ph.D.\ candidate in Economics at Johns Hopkins University, and my research sits at the intersection of political economy, macroeconomics, and public policy. I am deeply motivated by the Academy’s mission to convene cross-ideological, interdisciplinary leaders to strengthen American democracy and civic institutions.
+
+My research agenda focuses on wealth inequality, financial markets, and the distributional consequences of economic policy. In my job market paper, I develop and calibrate a life cycle macroeconomic model to better understand how heterogeneity in returns to wealth shapes inequality across households. In related work using nationally representative survey data, I examine how trust affects income growth and asset accumulation. Although grounded in quantitative methods, this research speaks directly to questions central to American institutions: economic mobility, opportunity, social trust, and the structural forces that shape participation in markets and civic life.
+
+Beyond research, my training has required extensive project coordination, collaboration across disciplines, and translation of complex findings into accessible written materials. I routinely draft research summaries, policy-relevant memos, and presentations for academic and non-technical audiences. My work involves identifying relevant literature, synthesizing diverse perspectives, managing data analysis workflows, and communicating findings clearly and concisely. I am comfortable supporting high-level discussions, preparing executive briefings, and drafting reports that integrate economic evidence with broader civic and institutional considerations.
+
+I am particularly excited about the Academy’s efforts to build on Our Common Purpose and the Commission on Reimagining the Economy. The opportunity to develop non-partisan, cross-ideological initiatives focused on the American economy and democracy aligns strongly with my own intellectual commitments. I am especially interested in work that connects national economic challenges with local institutional innovation, and I would welcome the opportunity to engage civic leaders, academic experts, and policy practitioners in structured dialogue. My background in political economy and quantitative research would allow me to contribute substantively to project development, research design, and data analysis, while also supporting outreach, partnership building, and grant development efforts.
+
+I am enthusiastic about working in either Cambridge or Washington, DC, and contributing to a collaborative, interdisciplinary environment. I value institutions that promote pluralism, civil discourse, and rigorous scholarship in service of the public good, and I am eager to contribute to the Academy’s long-standing tradition of independent, cross-sector leadership.
+
+I believe I would be a strong fit for this role because:
+\begin{enumerate}
+    \item I combine rigorous social science research with clear, accessible writing for diverse audiences.
+    \item I have substantive expertise in political economy, inequality, and public policy.
+    \item I am committed to interdisciplinary collaboration and cross-ideological engagement in service of democratic institutions.
+\end{enumerate}
+
+Thank you very much for your consideration. I would welcome the opportunity to contribute to the Academy’s work advancing American institutions and the public good.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
